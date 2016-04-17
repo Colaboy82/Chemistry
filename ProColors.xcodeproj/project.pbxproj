@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
+		EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */; };
+		EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FF1CC4143D002C31BD /* ViewController.m */; };
+		EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CF3011CC4143D002C31BD /* Main.storyboard */; };
+		EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6CF3041CC4143D002C31BD /* Assets.xcassets */; };
+		EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6CF3061CC4143D002C31BD /* LaunchScreen.storyboard */; };
+		EC6CF3131CC4143D002C31BD /* ProColorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF3121CC4143D002C31BD /* ProColorsTests.m */; };
+		EC6CF31E1CC4143D002C31BD /* ProColorsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF31D1CC4143D002C31BD /* ProColorsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC6CF30F1CC4143D002C31BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6CF2ED1CC4143D002C31BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6CF2F41CC4143D002C31BD;
+			remoteInfo = ProColors;
+		};
+		EC6CF31A1CC4143D002C31BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6CF2ED1CC4143D002C31BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6CF2F41CC4143D002C31BD;
+			remoteInfo = ProColors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CF2F91CC4143D002C31BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC6CF2FB1CC4143D002C31BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC6CF2FE1CC4143D002C31BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC6CF2FF1CC4143D002C31BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC6CF3021CC4143D002C31BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6CF3041CC4143D002C31BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6CF3071CC4143D002C31BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC6CF3091CC4143D002C31BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6CF30E1CC4143D002C31BD /* ProColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CF3121CC4143D002C31BD /* ProColorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProColorsTests.m; sourceTree = "<group>"; };
+		EC6CF3141CC4143D002C31BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6CF3191CC4143D002C31BD /* ProColorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProColorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6CF31D1CC4143D002C31BD /* ProColorsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProColorsUITests.m; sourceTree = "<group>"; };
+		EC6CF31F1CC4143D002C31BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6CF2F21CC4143D002C31BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF30B1CC4143D002C31BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF3161CC4143D002C31BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC6CF2EC1CC4143D002C31BD = {
+			isa = PBXGroup;
+			children = (
+				EC6CF2F71CC4143D002C31BD /* ProColors */,
+				EC6CF3111CC4143D002C31BD /* ProColorsTests */,
+				EC6CF31C1CC4143D002C31BD /* ProColorsUITests */,
+				EC6CF2F61CC4143D002C31BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC6CF2F61CC4143D002C31BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF2F51CC4143D002C31BD /* ProColors.app */,
+				EC6CF30E1CC4143D002C31BD /* ProColorsTests.xctest */,
+				EC6CF3191CC4143D002C31BD /* ProColorsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC6CF2F71CC4143D002C31BD /* ProColors */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF2FB1CC4143D002C31BD /* AppDelegate.h */,
+				EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */,
+				EC6CF2FE1CC4143D002C31BD /* ViewController.h */,
+				EC6CF2FF1CC4143D002C31BD /* ViewController.m */,
+				EC6CF3011CC4143D002C31BD /* Main.storyboard */,
+				EC6CF3041CC4143D002C31BD /* Assets.xcassets */,
+				EC6CF3061CC4143D002C31BD /* LaunchScreen.storyboard */,
+				EC6CF3091CC4143D002C31BD /* Info.plist */,
+				EC6CF2F81CC4143D002C31BD /* Supporting Files */,
+			);
+			path = ProColors;
+			sourceTree = "<group>";
+		};
+		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF2F91CC4143D002C31BD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC6CF3111CC4143D002C31BD /* ProColorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF3121CC4143D002C31BD /* ProColorsTests.m */,
+				EC6CF3141CC4143D002C31BD /* Info.plist */,
+			);
+			path = ProColorsTests;
+			sourceTree = "<group>";
+		};
+		EC6CF31C1CC4143D002C31BD /* ProColorsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6CF31D1CC4143D002C31BD /* ProColorsUITests.m */,
+				EC6CF31F1CC4143D002C31BD /* Info.plist */,
+			);
+			path = ProColorsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC6CF2F41CC4143D002C31BD /* ProColors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CF3221CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColors" */;
+			buildPhases = (
+				EC6CF2F11CC4143D002C31BD /* Sources */,
+				EC6CF2F21CC4143D002C31BD /* Frameworks */,
+				EC6CF2F31CC4143D002C31BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProColors;
+			productName = ProColors;
+			productReference = EC6CF2F51CC4143D002C31BD /* ProColors.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC6CF30D1CC4143D002C31BD /* ProColorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CF3251CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColorsTests" */;
+			buildPhases = (
+				EC6CF30A1CC4143D002C31BD /* Sources */,
+				EC6CF30B1CC4143D002C31BD /* Frameworks */,
+				EC6CF30C1CC4143D002C31BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6CF3101CC4143D002C31BD /* PBXTargetDependency */,
+			);
+			name = ProColorsTests;
+			productName = ProColorsTests;
+			productReference = EC6CF30E1CC4143D002C31BD /* ProColorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC6CF3181CC4143D002C31BD /* ProColorsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6CF3281CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColorsUITests" */;
+			buildPhases = (
+				EC6CF3151CC4143D002C31BD /* Sources */,
+				EC6CF3161CC4143D002C31BD /* Frameworks */,
+				EC6CF3171CC4143D002C31BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6CF31B1CC4143D002C31BD /* PBXTargetDependency */,
+			);
+			name = ProColorsUITests;
+			productName = ProColorsUITests;
+			productReference = EC6CF3191CC4143D002C31BD /* ProColorsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC6CF2ED1CC4143D002C31BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = MuSquared;
+				TargetAttributes = {
+					EC6CF2F41CC4143D002C31BD = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EC6CF30D1CC4143D002C31BD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EC6CF2F41CC4143D002C31BD;
+					};
+					EC6CF3181CC4143D002C31BD = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EC6CF2F41CC4143D002C31BD;
+					};
+				};
+			};
+			buildConfigurationList = EC6CF2F01CC4143D002C31BD /* Build configuration list for PBXProject "ProColors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC6CF2EC1CC4143D002C31BD;
+			productRefGroup = EC6CF2F61CC4143D002C31BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC6CF2F41CC4143D002C31BD /* ProColors */,
+				EC6CF30D1CC4143D002C31BD /* ProColorsTests */,
+				EC6CF3181CC4143D002C31BD /* ProColorsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC6CF2F31CC4143D002C31BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
+				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
+				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF30C1CC4143D002C31BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF3171CC4143D002C31BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6CF2F11CC4143D002C31BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */,
+				EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */,
+				EC6CF2FA1CC4143D002C31BD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF30A1CC4143D002C31BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CF3131CC4143D002C31BD /* ProColorsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6CF3151CC4143D002C31BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6CF31E1CC4143D002C31BD /* ProColorsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC6CF3101CC4143D002C31BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6CF2F41CC4143D002C31BD /* ProColors */;
+			targetProxy = EC6CF30F1CC4143D002C31BD /* PBXContainerItemProxy */;
+		};
+		EC6CF31B1CC4143D002C31BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6CF2F41CC4143D002C31BD /* ProColors */;
+			targetProxy = EC6CF31A1CC4143D002C31BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC6CF3011CC4143D002C31BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6CF3021CC4143D002C31BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC6CF3061CC4143D002C31BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6CF3071CC4143D002C31BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC6CF3201CC4143D002C31BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC6CF3211CC4143D002C31BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC6CF3231CC4143D002C31BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProColors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC6CF3241CC4143D002C31BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ProColors/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC6CF3261CC4143D002C31BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProColors.app/ProColors";
+			};
+			name = Debug;
+		};
+		EC6CF3271CC4143D002C31BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProColors.app/ProColors";
+			};
+			name = Release;
+		};
+		EC6CF3291CC4143D002C31BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProColorsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProColors;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EC6CF32A1CC4143D002C31BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProColorsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProColors;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6CF2F01CC4143D002C31BD /* Build configuration list for PBXProject "ProColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CF3201CC4143D002C31BD /* Debug */,
+				EC6CF3211CC4143D002C31BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6CF3221CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CF3231CC4143D002C31BD /* Debug */,
+				EC6CF3241CC4143D002C31BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6CF3251CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CF3261CC4143D002C31BD /* Debug */,
+				EC6CF3271CC4143D002C31BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC6CF3281CC4143D002C31BD /* Build configuration list for PBXNativeTarget "ProColorsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6CF3291CC4143D002C31BD /* Debug */,
+				EC6CF32A1CC4143D002C31BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC6CF2ED1CC4143D002C31BD /* Project object */;
+}
