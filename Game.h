@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+BOOL User;
+
+double vertical = 70;
+double horizontal = 50;
+
 @interface Game : UIViewController
 {
     //Backgrounds
