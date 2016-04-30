@@ -20,6 +20,10 @@
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x - horizontal, Spawn.center.y);
                          }];
+        Up = NO;
+        Down = NO;
+        Left = YES;
+        Right = NO;
 }
 -(void)SwipeRightMethod{
         Spawn.center = CGPointMake(Spawn.center.x + horizontal, Spawn.center.y);
@@ -27,6 +31,10 @@
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x + horizontal, Spawn.center.y);
                          }];
+        Up = NO;
+        Down = NO;
+        Left = NO;
+        Right = YES;
 }
 -(void)SwipeUpMethod{
         Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y - vertical);
@@ -34,6 +42,10 @@
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y - vertical);
                          }];
+        Up = YES;
+        Down = NO;
+        Left = NO;
+        Right = NO;
 }
 -(void)SwipeDownMethod{
         Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
@@ -41,17 +53,44 @@
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
                          }];
+        Up = NO;
+        Down = YES;
+        Left = NO;
+        Right = NO;
 }
 
 -(void)BoundariesMethod{
     if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
-        
+        horizontal = 65;
+        vertical = 70;
+    }else{
+        horizontal = 0;
+        vertical = 0;
+        Hide = [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
     }
+}
+-(void)HideObject{
+    Spawn.hidden = YES;
+    Spawn.center = CGPointMake(160 ,239);
+    SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
+}
+-(void)Respawn{
+    Spawn.hidden = NO;
 }
 
 - (void)viewDidLoad {
     
+    //NSLog(@"x: %f",  Spawn.center.x);
+    //NSLog(@"y: %f",  Spawn.center.y);
+    
     User = YES;
+    
+    Up = NO;
+    Down = NO;
+    Left = NO;
+    Right = NO;
+    
+    Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
     
     if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
         UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeUpMethod)];
@@ -71,7 +110,7 @@
         [self.view addGestureRecognizer:swipeRight];
     }
     
-    Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
+   
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

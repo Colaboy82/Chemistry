@@ -10,8 +10,13 @@
 
 BOOL User;
 
-double vertical = 70;
-double horizontal = 50;
+BOOL Up;
+BOOL Down;
+BOOL Left;
+BOOL Right;
+
+double vertical = 65;
+double horizontal = 70;
 
 @interface Game : UIViewController
 {
@@ -41,6 +46,8 @@ double horizontal = 50;
     
     //Timers
     NSTimer *Boundaries;//Checks that the spawned object does not leave the screen
+    NSTimer *Hide;//Hides the spawned object after it touches a color
+    NSTimer *SpawnTimer; //Spawns the object in the box
 }
 
 
