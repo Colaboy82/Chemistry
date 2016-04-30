@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-BOOL User;
-
 BOOL Up;
 BOOL Down;
 BOOL Left;
 BOOL Right;
 
-double vertical = 65;
+double vertical = 63;
 double horizontal = 70;
+
+int start = 3;
+int CountdownNumber = 60;
 
 @interface Game : UIViewController
 {
@@ -30,7 +31,8 @@ double horizontal = 70;
     
     //Labels
     IBOutlet UILabel *Score;
-    IBOutlet UILabel *Lives;
+    IBOutlet UILabel *Timer;
+    IBOutlet UILabel *CountdownLabel;
     
     //Game Pieces
     IBOutlet UIImageView *Spawn; //Piece to be swiped
@@ -48,6 +50,9 @@ double horizontal = 70;
     NSTimer *Boundaries;//Checks that the spawned object does not leave the screen
     NSTimer *Hide;//Hides the spawned object after it touches a color
     NSTimer *SpawnTimer; //Spawns the object in the box
+    NSTimer *ScoreTimer;//Keeps track of the score
+    NSTimer *CountdownTimer;//The timer
+    NSTimer *StartTimer;//Timer that counts 3, 2, 1
 }
 
 

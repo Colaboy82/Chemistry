@@ -61,7 +61,7 @@
 
 -(void)BoundariesMethod{
     if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
-        horizontal = 65;
+        horizontal = 63;
         vertical = 70;
     }else{
         horizontal = 0;
@@ -77,39 +77,62 @@
 -(void)Respawn{
     Spawn.hidden = NO;
 }
-
+-(void)StartCountdown{
+    start = start - 1;
+    NSString *CountdownString = [NSString stringWithFormat:@"%i",start];
+    CountdownLabel.text = CountdownString;
+    if(start == 0){
+        [StartTimer invalidate];
+        
+        //swipe recognizers
+        if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
+            UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeUpMethod)];
+            swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
+            [self.view addGestureRecognizer:swipeUp];
+            
+            UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeDownMethod)];
+            swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
+            [self.view addGestureRecognizer:swipeDown];
+            
+            UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeLeftMethod)];
+            swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+            [self.view addGestureRecognizer:swipeLeft];
+            
+            UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeRightMethod)];
+            swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+            [self.view addGestureRecognizer:swipeRight];
+        }
+        
+        //Timer
+        CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
+    }
+}
+-(void)Countdown{
+    CountdownNumber = CountdownNumber - 1;
+    NSString *TimeLeft = [NSString stringWithFormat:@"Time Left: %i", CountdownNumber];
+    Timer.text = TimeLeft;
+    if(CountdownNumber == 0){
+        [CountdownTimer invalidate];
+        [self EndGame];
+    }
+}
+-(void)EndGame{//ends the game
+    Spawn.userInteractionEnabled = NO;
+    Spawn.hidden = YES;
+}
 - (void)viewDidLoad {
     
     //NSLog(@"x: %f",  Spawn.center.x);
     //NSLog(@"y: %f",  Spawn.center.y);
     
-    User = YES;
-    
+    StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
+        
     Up = NO;
     Down = NO;
     Left = NO;
     Right = NO;
     
     Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
-    
-    if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
-        UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeUpMethod)];
-        swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
-        [self.view addGestureRecognizer:swipeUp];
-    
-        UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeDownMethod)];
-        swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
-        [self.view addGestureRecognizer:swipeDown];
-    
-        UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeLeftMethod)];
-        swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
-        [self.view addGestureRecognizer:swipeLeft];
-
-        UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeRightMethod)];
-        swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
-        [self.view addGestureRecognizer:swipeRight];
-    }
-    
    
     
     [super viewDidLoad];
