@@ -13,10 +13,27 @@
 @end
 
 @implementation Game
+-(void)SwitchObject{
+    int randomObject = rand() % 3;
+    if(Spawn.hidden == YES){
+        switch (randomObject) {
+            case 0:
+                Spawn.image=[UIImage imageNamed:@"Boy.png"];
+                break;
+            case 1:
+                Spawn.image=[UIImage imageNamed:@"arrow.png"];
+                break;
+            case 2:
+                Spawn.image=[UIImage imageNamed:@"Boy.png"];
+                break;
+        }
+    }
+}
+    
 
 -(void)SwipeLeftMethod{
         Spawn.center = CGPointMake(Spawn.center.x - horizontal, Spawn.center.y);
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.05
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x - horizontal, Spawn.center.y);
                          }];
@@ -27,7 +44,7 @@
 }
 -(void)SwipeRightMethod{
         Spawn.center = CGPointMake(Spawn.center.x + horizontal, Spawn.center.y);
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.05
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x + horizontal, Spawn.center.y);
                          }];
@@ -38,7 +55,7 @@
 }
 -(void)SwipeUpMethod{
         Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y - vertical);
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.05
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y - vertical);
                          }];
@@ -49,7 +66,7 @@
 }
 -(void)SwipeDownMethod{
         Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.05
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
                          }];
@@ -72,6 +89,9 @@
 -(void)HideObject{
     Spawn.hidden = YES;
     Spawn.center = CGPointMake(160 ,239);
+    //Spawn Object Timer
+    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    //Respawns image
     SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
 }
 -(void)Respawn{

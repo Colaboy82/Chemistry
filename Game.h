@@ -53,6 +53,7 @@ int CountdownNumber = 60;
     NSTimer *ScoreTimer;//Keeps track of the score
     NSTimer *CountdownTimer;//The timer
     NSTimer *StartTimer;//Timer that counts 3, 2, 1
+    NSTimer *SwitchObjectsTimer;//switches object that spawns
 }
 
 

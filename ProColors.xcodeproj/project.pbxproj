@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D5513B41CC43EBB00414144 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5513B31CC43EBB00414144 /* Game.m */; };
+		3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DEF701CF1EF1E003E635E /* Boy.png */; };
 		3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016821CC43A9B0030A97F /* SpawnBox.png */; };
 		3D8016851CC43A9B0030A97F /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016831CC43A9B0030A97F /* arrow.png */; };
 		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		3D5513B21CC43EBB00414144 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		3D5513B31CC43EBB00414144 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		3D5DEF701CF1EF1E003E635E /* Boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy.png; sourceTree = "<group>"; };
 		3D8016821CC43A9B0030A97F /* SpawnBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpawnBox.png; sourceTree = "<group>"; };
 		3D8016831CC43A9B0030A97F /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D5DEF701CF1EF1E003E635E /* Boy.png */,
 				3D8016821CC43A9B0030A97F /* SpawnBox.png */,
 				3D8016831CC43A9B0030A97F /* arrow.png */,
 				EC6CF2F91CC4143D002C31BD /* main.m */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */,
 				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
 				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
