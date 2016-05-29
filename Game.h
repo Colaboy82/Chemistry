@@ -20,11 +20,36 @@ double vertical = 63;
 double horizontal = 70;
 
 int start;
-int CountdownNumber = 60;
+int CountdownNumber;
 int ScoreNumber;
 int HighScore;
 
+//Booleans for SpawnImage
 BOOL GreenBool;
+BOOL RedBool;
+BOOL YellowBool;
+BOOL OrangeBool;
+
+//Top Booleans
+BOOL GreenTop;
+BOOL RedTop;
+BOOL YellowTop;
+BOOL OrangeTop;
+//Bottom Booleans
+BOOL GreenBottom;
+BOOL RedBottom;
+BOOL YellowBottom;
+BOOL OrangeBottom;
+//Left Booleans
+BOOL GreenLeft;
+BOOL RedLeft;
+BOOL YellowLeft;
+BOOL OrangeLeft;
+//Right Booleans
+BOOL GreenRight;
+BOOL RedRight;
+BOOL YellowRight;
+BOOL OrangeRight;
 
 @interface Game : UIViewController <GKLeaderboardViewControllerDelegate>
 {
@@ -35,10 +60,10 @@ BOOL GreenBool;
     
     //Backgrounds
     IBOutlet UIImageView *SpawnBox;
-    IBOutlet UIImageView *Red;
-    IBOutlet UIImageView *Yellow;
-    IBOutlet UIImageView *Green;
-    IBOutlet UIImageView *Orange;
+    IBOutlet UIImageView *TopBox;
+    IBOutlet UIImageView *BottomBox;
+    IBOutlet UIImageView *LeftBox;
+    IBOutlet UIImageView *RightBox;
     IBOutlet UIImageView *Border;
     
     //Labels
@@ -66,6 +91,7 @@ BOOL GreenBool;
     NSTimer *CountdownTimer;//The timer
     NSTimer *StartTimer;//Timer that counts 3, 2, 1
     NSTimer *SwitchObjectsTimer;//switches object that spawns
+    NSTimer *SwitchColorTimer;//switches the colors
 }
 
 

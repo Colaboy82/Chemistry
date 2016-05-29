@@ -214,17 +214,17 @@
                     <connections>
                         <outlet property="Back" destination="qPj-Fe-4v5" id="8kH-n5-8Xg"/>
                         <outlet property="Border" destination="MQK-zY-qt0" id="RBB-wJ-BHk"/>
+                        <outlet property="BottomBox" destination="mXo-vb-Fhe" id="b5b-Bv-cJQ"/>
                         <outlet property="CountdownLabel" destination="BTn-jw-cyq" id="7BK-1e-OGS"/>
-                        <outlet property="Green" destination="hu6-7M-YYt" id="MYY-67-TA0"/>
-                        <outlet property="Orange" destination="mXo-vb-Fhe" id="qnp-QO-nAi"/>
+                        <outlet property="LeftBox" destination="hu6-7M-YYt" id="mCz-3H-eOf"/>
                         <outlet property="Pause" destination="9Ou-jm-STv" id="zzm-ld-OSh"/>
-                        <outlet property="Red" destination="8jy-f7-hji" id="AKA-W0-ntu"/>
                         <outlet property="Resume" destination="VWA-ts-3Rs" id="Eqn-sx-6bF"/>
+                        <outlet property="RightBox" destination="ptn-Tl-H0u" id="4b6-eS-Zi4"/>
                         <outlet property="Score" destination="ybC-7h-QuP" id="HRz-2b-5gK"/>
                         <outlet property="Spawn" destination="CMg-6W-gsf" id="yXl-Mh-zdB"/>
                         <outlet property="SpawnBox" destination="z7b-Ol-YRs" id="MX7-VP-bhu"/>
                         <outlet property="Timer" destination="hyG-cg-52o" id="BJA-he-woq"/>
-                        <outlet property="Yellow" destination="ptn-Tl-H0u" id="wZS-vX-dqu"/>
+                        <outlet property="TopBox" destination="8jy-f7-hji" id="vmh-P8-C7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nX-ps-9fU" sceneMemberID="firstResponder"/>
@@ -293,6 +293,6 @@
         <image name="SpawnBox.png" width="720" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T3D-Tb-qbg"/>
+        <segue reference="wBw-8S-Riq"/>
     </inferredMetricsTieBreakers>
 </document>

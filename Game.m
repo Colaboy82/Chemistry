@@ -68,19 +68,138 @@
             case 0:
                 Spawn.image=[UIImage imageNamed:@"Boy.png"];
                 GreenBool = YES;
+                RedBool = NO;
+                YellowBool = NO;
+                OrangeBool = NO;
                 break;
             case 1:
                 Spawn.image=[UIImage imageNamed:@"arrow.png"];
                 GreenBool = NO;
+                RedBool = NO;
+                YellowBool = NO;
+                OrangeBool = NO;
                 break;
             case 2:
                 Spawn.image=[UIImage imageNamed:@"Boy.png"];
                 GreenBool = YES;
+                RedBool = NO;
+                YellowBool = NO;
+                OrangeBool = NO;
                 break;
         }
     }
 }
-    
+-(void)SwitchColors{
+    int randomObject = rand() % 4;
+    if(Spawn.hidden == YES){
+        switch (randomObject) {
+            case 0://Left,Top,right,bottom G/R/Y/O
+                TopBox.image = [UIImage imageNamed:@""];
+                BottomBox.image = [UIImage imageNamed:@""];
+                LeftBox.image = [UIImage imageNamed:@""];
+                RightBox.image = [UIImage imageNamed:@""];
+                
+                GreenTop = NO;
+                GreenBottom = NO;
+                GreenLeft = YES;
+                GreenRight = NO;
+                
+                RedTop = YES;
+                RedBottom = NO;
+                RedLeft = NO;
+                RedRight = NO;
+                
+                YellowTop = NO;
+                YellowBottom = NO;
+                YellowLeft = NO;
+                YellowRight = YES;
+                
+                OrangeTop = NO;
+                OrangeBottom = YES;
+                OrangeLeft = NO;
+                OrangeRight = NO;
+                break;
+            case 1://Left,Top,right,bottom O/G/R/Y
+                TopBox.image = [UIImage imageNamed:@""];
+                BottomBox.image = [UIImage imageNamed:@""];
+                LeftBox.image = [UIImage imageNamed:@""];
+                RightBox.image = [UIImage imageNamed:@""];
+                
+                GreenTop = YES;
+                GreenBottom = NO;
+                GreenLeft = NO;
+                GreenRight = NO;
+                
+                RedTop = NO;
+                RedBottom = NO;
+                RedLeft = NO;
+                RedRight = YES;
+                
+                YellowTop = NO;
+                YellowBottom = YES;
+                YellowLeft = NO;
+                YellowRight = NO;
+                
+                OrangeTop = NO;
+                OrangeBottom = NO;
+                OrangeLeft = YES;
+                OrangeRight = NO;
+                break;
+            case 2://Left,Top,right,bottom Y/O/G/R
+                TopBox.image = [UIImage imageNamed:@""];
+                BottomBox.image = [UIImage imageNamed:@""];
+                LeftBox.image = [UIImage imageNamed:@""];
+                RightBox.image = [UIImage imageNamed:@""];
+                
+                GreenTop = NO;
+                GreenBottom = NO;
+                GreenLeft = NO;
+                GreenRight = YES;
+                
+                RedTop = NO;
+                RedBottom = YES;
+                RedLeft = NO;
+                RedRight = NO;
+                
+                YellowTop = NO;
+                YellowBottom = NO;
+                YellowLeft = YES;
+                YellowRight = NO;
+                
+                OrangeTop = YES;
+                OrangeBottom = NO;
+                OrangeLeft = NO;
+                OrangeRight = NO;
+                break;
+            case 3://Left,Top,right,bottom R/Y/O/G
+                TopBox.image = [UIImage imageNamed:@""];
+                BottomBox.image = [UIImage imageNamed:@""];
+                LeftBox.image = [UIImage imageNamed:@""];
+                RightBox.image = [UIImage imageNamed:@""];
+                
+                GreenTop = NO;
+                GreenBottom = YES;
+                GreenLeft = NO;
+                GreenRight = NO;
+                
+                RedTop = NO;
+                RedBottom = NO;
+                RedLeft = YES;
+                RedRight = NO;
+                
+                YellowTop = YES;
+                YellowBottom = NO;
+                YellowLeft = NO;
+                YellowRight = NO;
+                
+                OrangeTop = NO;
+                OrangeBottom = NO;
+                OrangeLeft = NO;
+                OrangeRight = YES;
+                break;
+        }
+    }
+}
 
 -(void)SwipeLeftMethod{
         Spawn.center = CGPointMake(Spawn.center.x - horizontal, Spawn.center.y);
@@ -142,6 +261,8 @@
     Spawn.center = CGPointMake(160 ,239);
     //Spawn Object Timer
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    //Switch Color Timer
+    SwitchColorTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchColors) userInfo:nil repeats:NO];
     //Respawns image
     SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
 }
@@ -182,7 +303,7 @@
     }
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && CGRectIntersectsRect(Spawn.frame, Green.frame)){
+    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
         ScoreNumber = ScoreNumber + 1;//300000
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
@@ -204,6 +325,7 @@
 -(void)EndGame{//ends the game
     Spawn.userInteractionEnabled = NO;
     Spawn.hidden = YES;
+    [ScoreTimer invalidate];
 }
 - (void)viewDidLoad {
     
@@ -214,6 +336,7 @@
 
     start = 3;
     ScoreNumber = 0;
+    CountdownNumber = 60;
     
     Up = NO;
     Down = NO;
