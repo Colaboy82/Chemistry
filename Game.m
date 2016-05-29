@@ -134,16 +134,16 @@
     }else{
         horizontal = 0;
         vertical = 0;
-        Hide = [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
+        Hide = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
     }
 }
 -(void)HideObject{
     Spawn.hidden = YES;
     Spawn.center = CGPointMake(160 ,239);
     //Spawn Object Timer
-    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
     //Respawns image
-    SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.6 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
+    SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
 }
 -(void)Respawn{
     Spawn.hidden = NO;
@@ -178,12 +178,12 @@
         
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
-        ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:YES];
+        ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:YES];
     }
 }
 -(void)ScoreTracker{
     if(GreenBool == YES && CGRectIntersectsRect(Spawn.frame, Green.frame)){
-        ScoreNumber = ScoreNumber + 201;
+        ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
 }
