@@ -11,6 +11,7 @@
 		3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DEF701CF1EF1E003E635E /* Boy.png */; };
 		3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016821CC43A9B0030A97F /* SpawnBox.png */; };
 		3D8016851CC43A9B0030A97F /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016831CC43A9B0030A97F /* arrow.png */; };
+		3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC41B01CFA7E0B00A47210 /* GameKit.framework */; };
 		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
 		EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */; };
 		EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FF1CC4143D002C31BD /* ViewController.m */; };
@@ -40,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		3D5513B21CC43EBB00414144 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
-		3D5513B31CC43EBB00414144 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		3D5513B31CC43EBB00414144 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Game.m; path = ../Game.m; sourceTree = "<group>"; tabWidth = 6; wrapsLines = 1; };
 		3D5DEF701CF1EF1E003E635E /* Boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy.png; sourceTree = "<group>"; };
 		3D8016821CC43A9B0030A97F /* SpawnBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpawnBox.png; sourceTree = "<group>"; };
 		3D8016831CC43A9B0030A97F /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +226,11 @@
 					EC6CF2F41CC4143D002C31BD = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = CRBSJ4DXMT;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					EC6CF30D1CC4143D002C31BD = {
 						CreatedOnToolsVersion = 7.2.1;

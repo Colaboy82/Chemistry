@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 
 BOOL Up;
 BOOL Down;
@@ -20,8 +21,12 @@ double horizontal = 70;
 
 int start;
 int CountdownNumber = 60;
+int ScoreNumber;
+int HighScore;
 
-@interface Game : UIViewController
+BOOL GreenBool;
+
+@interface Game : UIViewController <GKLeaderboardViewControllerDelegate>
 {
     //Buttons
     IBOutlet UIButton *Pause;

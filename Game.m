@@ -67,12 +67,15 @@
         switch (randomObject) {
             case 0:
                 Spawn.image=[UIImage imageNamed:@"Boy.png"];
+                GreenBool = YES;
                 break;
             case 1:
                 Spawn.image=[UIImage imageNamed:@"arrow.png"];
+                GreenBool = NO;
                 break;
             case 2:
                 Spawn.image=[UIImage imageNamed:@"Boy.png"];
+                GreenBool = YES;
                 break;
         }
     }
@@ -175,6 +178,13 @@
         
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
+        ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:YES];
+    }
+}
+-(void)ScoreTracker{
+    if(GreenBool == YES && CGRectIntersectsRect(Spawn.frame, Green.frame)){
+        ScoreNumber = ScoreNumber + 201;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
 }
 -(void)Countdown{
@@ -184,6 +194,11 @@
     if(CountdownNumber == 0){
         [CountdownTimer invalidate];
         [self EndGame];
+        if(ScoreNumber > HighScore){
+            HighScore = ScoreNumber;
+            [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+            [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
+        }
     }
 }
 -(void)EndGame{//ends the game
@@ -196,8 +211,9 @@
     //NSLog(@"y: %f",  Spawn.center.y);
     
     StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
-    
+
     start = 3;
+    ScoreNumber = 0;
     
     Up = NO;
     Down = NO;
@@ -212,8 +228,17 @@
     Resume.hidden = YES;
     Back.hidden = YES;
     
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if([GKLocalPlayer localPlayer].authenticated == NO)
+    {
+        [[GKLocalPlayer localPlayer]
+         authenticateWithCompletionHandler:^(NSError *error)
+         {
+             NSLog(@"Error%@",error);
+         }];
+    }
 }
 
 
@@ -231,5 +256,34 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void) updateScore: (int64_t) score
+    forLeaderboardID: (NSString*) category
+{
+    GKScore *scoreObj = [[GKScore alloc]
+                         initWithCategory:category];
+    scoreObj.value = score;
+    scoreObj.context = 0;
+    [scoreObj reportScoreWithCompletionHandler:^(NSError *error) {
+        // Completion code can be added here
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:nil message:@"Score Updated Succesfully"
+                              delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        //[alert show];
+        
+    }];
+}
+
+-(IBAction)showLeaderBoard:(id)sender{
+    GKLeaderboardViewController *leaderboardViewController =
+    [[GKLeaderboardViewController alloc] init];
+    leaderboardViewController.leaderboardDelegate = self;
+    [self presentModalViewController:
+     leaderboardViewController animated:YES];
+}
+#pragma mark - Gamekit delegates
+- (void)leaderboardViewControllerDidFinish:
+(GKLeaderboardViewController *)viewController{
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 @end
