@@ -13,6 +13,54 @@
 @end
 
 @implementation Game
+
+//Pause and Resume Methods
+
+-(void)pauseLayer:(CALayer *)layer{
+    
+    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    layer.speed=0.0;
+    layer.timeOffset=pausedTime;
+   
+    Spawn.userInteractionEnabled = NO;
+    [CountdownTimer invalidate];
+    [Boundaries invalidate];
+}
+
+-(void)resumeLayer:(CALayer *)layer{
+    
+    CFTimeInterval pausedTime =[layer timeOffset];
+    layer.speed=1.0;
+    layer.timeOffset=0.0;
+    layer.beginTime=0.0;
+    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil]-pausedTime;
+    layer.beginTime = timeSincePause;
+
+    CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
+    Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
+    Spawn.userInteractionEnabled = YES;
+
+}
+-(IBAction)Pause{
+    
+    [self pauseLayer:self.view.layer];
+    Resume.hidden = NO;
+    Back.hidden = NO;
+    Pause.hidden = YES;
+    PauseTouch = YES;
+    Spawn.hidden = YES;
+}
+
+-(IBAction)Resume{
+    
+    [self resumeLayer:self.view.layer];
+    Resume.hidden = YES;
+    Back.hidden = YES;
+    Pause.hidden = NO;
+    PauseTouch = NO;
+    Spawn.hidden = NO;
+}
+
 -(void)SwitchObject{
     int randomObject = rand() % 3;
     if(Spawn.hidden == YES){
@@ -104,8 +152,10 @@
     if(start == 0){
         [StartTimer invalidate];
         
+        Pause.hidden = NO;
+        
         //swipe recognizers
-        if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
+        if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame) && PauseTouch == NO){
             UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(SwipeUpMethod)];
             swipeUp.direction = UISwipeGestureRecognizerDirectionUp;
             [self.view addGestureRecognizer:swipeUp];
@@ -146,14 +196,21 @@
     //NSLog(@"y: %f",  Spawn.center.y);
     
     StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
-        
+    
+    start = 3;
+    
     Up = NO;
     Down = NO;
     Left = NO;
     Right = NO;
     
+    PauseTouch = NO;
+    
     Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
    
+    Pause.hidden = YES;
+    Resume.hidden = YES;
+    Back.hidden = YES;
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

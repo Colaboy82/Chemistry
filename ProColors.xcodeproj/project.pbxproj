@@ -44,6 +44,7 @@
 		3D5DEF701CF1EF1E003E635E /* Boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy.png; sourceTree = "<group>"; };
 		3D8016821CC43A9B0030A97F /* SpawnBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpawnBox.png; sourceTree = "<group>"; };
 		3D8016831CC43A9B0030A97F /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		3DDC41B01CFA7E0B00A47210 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6CF2F91CC4143D002C31BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6CF2FB1CC4143D002C31BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		EC6CF2EC1CC4143D002C31BD = {
 			isa = PBXGroup;
 			children = (
+				3DDC41B01CFA7E0B00A47210 /* GameKit.framework */,
 				EC6CF2F71CC4143D002C31BD /* ProColors */,
 				EC6CF3111CC4143D002C31BD /* ProColorsTests */,
 				EC6CF31C1CC4143D002C31BD /* ProColorsUITests */,
@@ -432,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProColors/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ProColors/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";

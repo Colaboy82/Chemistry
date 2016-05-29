@@ -13,14 +13,21 @@ BOOL Down;
 BOOL Left;
 BOOL Right;
 
+BOOL PauseTouch;//checks to see if paused; if it is the gestures will not be recognized
+
 double vertical = 63;
 double horizontal = 70;
 
-int start = 3;
+int start;
 int CountdownNumber = 60;
 
 @interface Game : UIViewController
 {
+    //Buttons
+    IBOutlet UIButton *Pause;
+    IBOutlet UIButton *Resume;
+    IBOutlet UIButton *Back;
+    
     //Backgrounds
     IBOutlet UIImageView *SpawnBox;
     IBOutlet UIImageView *Red;
