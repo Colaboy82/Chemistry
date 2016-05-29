@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 
 int HighScoreNumber;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <GKLeaderboardViewControllerDelegate>
 {
     IBOutlet UILabel *HighScoreLabel;
 }

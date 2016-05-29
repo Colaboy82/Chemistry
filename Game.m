@@ -183,7 +183,7 @@
 }
 -(void)ScoreTracker{
     if(GreenBool == YES && CGRectIntersectsRect(Spawn.frame, Green.frame)){
-        ScoreNumber = ScoreNumber + 1;
+        ScoreNumber = ScoreNumber + 1;//300000
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
 }
@@ -231,14 +231,7 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if([GKLocalPlayer localPlayer].authenticated == NO)
-    {
-        [[GKLocalPlayer localPlayer]
-         authenticateWithCompletionHandler:^(NSError *error)
-         {
-             NSLog(@"Error%@",error);
-         }];
-    }
+
 }
 
 
@@ -273,17 +266,5 @@
     }];
 }
 
--(IBAction)showLeaderBoard:(id)sender{
-    GKLeaderboardViewController *leaderboardViewController =
-    [[GKLeaderboardViewController alloc] init];
-    leaderboardViewController.leaderboardDelegate = self;
-    [self presentModalViewController:
-     leaderboardViewController animated:YES];
-}
-#pragma mark - Gamekit delegates
-- (void)leaderboardViewControllerDidFinish:
-(GKLeaderboardViewController *)viewController{
-    [self dismissModalViewControllerAnimated:YES];
-}
 
 @end
