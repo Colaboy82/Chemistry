@@ -16,6 +16,7 @@
 		3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD291CFB65860018B5B3 /* Foundation.framework */; };
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
 		3DB1DD2E1CFB65930018B5B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */; };
+		3DBD8EF71D03640200A9D070 /* HowToPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */; };
 		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
 		EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */; };
 		EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FF1CC4143D002C31BD /* ViewController.m */; };
@@ -54,6 +55,8 @@
 		3DB1DD291CFB65860018B5B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3DBD8EF51D03640200A9D070 /* HowToPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HowToPlayViewController.h; path = ../HowToPlayViewController.h; sourceTree = "<group>"; };
+		3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HowToPlayViewController.m; path = ../HowToPlayViewController.m; sourceTree = "<group>"; };
 		3DDC41B01CFA7E0B00A47210 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6CF2F91CC4143D002C31BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				3D5513B31CC43EBB00414144 /* Game.m */,
 				3DB1DD261CFB64620018B5B3 /* GameCenterViewController.h */,
 				3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */,
+				3DBD8EF51D03640200A9D070 /* HowToPlayViewController.h */,
+				3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */,
 				EC6CF3011CC4143D002C31BD /* Main.storyboard */,
 				EC6CF3041CC4143D002C31BD /* Assets.xcassets */,
 				EC6CF3061CC4143D002C31BD /* LaunchScreen.storyboard */,
@@ -314,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBD8EF71D03640200A9D070 /* HowToPlayViewController.m in Sources */,
 				EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */,
 				EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */,
 				EC6CF2FA1CC4143D002C31BD /* main.m in Sources */,
@@ -409,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -446,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -463,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

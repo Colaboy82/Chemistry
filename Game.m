@@ -235,7 +235,7 @@
         Right = NO;
 }
 -(void)SwipeDownMethod{
-        Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
+        Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical + 20);
         [UIView animateWithDuration:0.05
                          animations:^{
                              Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
@@ -258,7 +258,7 @@
 }
 -(void)HideObject{
     Spawn.hidden = YES;
-    Spawn.center = CGPointMake(160 ,239);
+    Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);//160,239
     //Spawn Object Timer
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
     //Switch Color Timer
@@ -276,6 +276,7 @@
     if(start == 0){
         [StartTimer invalidate];
         
+        CountdownLabel.hidden = YES;
         Pause.hidden = NO;
         
         //swipe recognizers
