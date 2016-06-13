@@ -17,6 +17,8 @@
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
 		3DB1DD2E1CFB65930018B5B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */; };
 		3DBD8EF71D03640200A9D070 /* HowToPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */; };
+		EC524FB61D0F192100CA99B0 /* partsforchemkit in Resources */ = {isa = PBXBuildFile; fileRef = EC524FB51D0F192100CA99B0 /* partsforchemkit */; };
+		EC524FB81D0F196100CA99B0 /* reforgotba in Resources */ = {isa = PBXBuildFile; fileRef = EC524FB71D0F196100CA99B0 /* reforgotba */; };
 		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
 		EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */; };
 		EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FF1CC4143D002C31BD /* ViewController.m */; };
@@ -58,6 +60,8 @@
 		3DBD8EF51D03640200A9D070 /* HowToPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HowToPlayViewController.h; path = ../HowToPlayViewController.h; sourceTree = "<group>"; };
 		3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HowToPlayViewController.m; path = ../HowToPlayViewController.m; sourceTree = "<group>"; };
 		3DDC41B01CFA7E0B00A47210 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EC524FB51D0F192100CA99B0 /* partsforchemkit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = partsforchemkit; sourceTree = "<group>"; };
+		EC524FB71D0F196100CA99B0 /* reforgotba */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reforgotba; sourceTree = "<group>"; };
 		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6CF2F91CC4143D002C31BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6CF2FB1CC4143D002C31BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 			children = (
 				3D5DEF701CF1EF1E003E635E /* Boy.png */,
 				3D8016821CC43A9B0030A97F /* SpawnBox.png */,
+				EC524FB71D0F196100CA99B0 /* reforgotba */,
+				EC524FB51D0F192100CA99B0 /* partsforchemkit */,
 				3D8016831CC43A9B0030A97F /* arrow.png */,
 				EC6CF2F91CC4143D002C31BD /* main.m */,
 			);
@@ -293,6 +299,8 @@
 				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
 				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
+				EC524FB61D0F192100CA99B0 /* partsforchemkit in Resources */,
+				EC524FB81D0F196100CA99B0 /* reforgotba in Resources */,
 				3D8016851CC43A9B0030A97F /* arrow.png in Resources */,
 				3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */,
 			);
