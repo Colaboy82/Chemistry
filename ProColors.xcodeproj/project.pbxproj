@@ -17,8 +17,22 @@
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
 		3DB1DD2E1CFB65930018B5B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */; };
 		3DBD8EF71D03640200A9D070 /* HowToPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */; };
-		EC524FB61D0F192100CA99B0 /* partsforchemkit in Resources */ = {isa = PBXBuildFile; fileRef = EC524FB51D0F192100CA99B0 /* partsforchemkit */; };
-		EC524FB81D0F196100CA99B0 /* reforgotba in Resources */ = {isa = PBXBuildFile; fileRef = EC524FB71D0F196100CA99B0 /* reforgotba */; };
+		EC34AB391D0F2CDF00E6EFEA /* Ba-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB381D0F2CDF00E6EFEA /* Ba-norm.png */; };
+		EC34AB491D0F2CEB00E6EFEA /* Brick back.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3A1D0F2CEB00E6EFEA /* Brick back.png */; };
+		EC34AB4A1D0F2CEB00E6EFEA /* Ca-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3B1D0F2CEB00E6EFEA /* Ca-ionized.png */; };
+		EC34AB4B1D0F2CEB00E6EFEA /* Ca-Norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3C1D0F2CEB00E6EFEA /* Ca-Norm.png */; };
+		EC34AB4C1D0F2CEB00E6EFEA /* Cu-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3D1D0F2CEB00E6EFEA /* Cu-ionized.png */; };
+		EC34AB4D1D0F2CEB00E6EFEA /* Cu-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3E1D0F2CEB00E6EFEA /* Cu-norm.png */; };
+		EC34AB4E1D0F2CEB00E6EFEA /* Green Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB3F1D0F2CEB00E6EFEA /* Green Brick.png */; };
+		EC34AB4F1D0F2CEB00E6EFEA /* Li-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB401D0F2CEB00E6EFEA /* Li-ionized.png */; };
+		EC34AB501D0F2CEB00E6EFEA /* Li-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB411D0F2CEB00E6EFEA /* Li-norm.png */; };
+		EC34AB511D0F2CEB00E6EFEA /* Na-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB421D0F2CEB00E6EFEA /* Na-ionized.png */; };
+		EC34AB521D0F2CEB00E6EFEA /* Na-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB431D0F2CEB00E6EFEA /* Na-norm.png */; };
+		EC34AB531D0F2CEB00E6EFEA /* Orange Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB441D0F2CEB00E6EFEA /* Orange Brick.png */; };
+		EC34AB541D0F2CEB00E6EFEA /* Red brick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB451D0F2CEB00E6EFEA /* Red brick.png */; };
+		EC34AB551D0F2CEB00E6EFEA /* St-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB461D0F2CEB00E6EFEA /* St-ionized.png */; };
+		EC34AB561D0F2CEB00E6EFEA /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB471D0F2CEB00E6EFEA /* St-norm.png */; };
+		EC34AB571D0F2CEB00E6EFEA /* Yellow Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = EC34AB481D0F2CEB00E6EFEA /* Yellow Brick.png */; };
 		EC6CF2FA1CC4143D002C31BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2F91CC4143D002C31BD /* main.m */; };
 		EC6CF2FD1CC4143D002C31BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FC1CC4143D002C31BD /* AppDelegate.m */; };
 		EC6CF3001CC4143D002C31BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6CF2FF1CC4143D002C31BD /* ViewController.m */; };
@@ -60,8 +74,22 @@
 		3DBD8EF51D03640200A9D070 /* HowToPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HowToPlayViewController.h; path = ../HowToPlayViewController.h; sourceTree = "<group>"; };
 		3DBD8EF61D03640200A9D070 /* HowToPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HowToPlayViewController.m; path = ../HowToPlayViewController.m; sourceTree = "<group>"; };
 		3DDC41B01CFA7E0B00A47210 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		EC524FB51D0F192100CA99B0 /* partsforchemkit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = partsforchemkit; sourceTree = "<group>"; };
-		EC524FB71D0F196100CA99B0 /* reforgotba */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reforgotba; sourceTree = "<group>"; };
+		EC34AB381D0F2CDF00E6EFEA /* Ba-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ba-norm.png"; path = "../../../Downloads/reforgotba/Ba-norm.png"; sourceTree = "<group>"; };
+		EC34AB3A1D0F2CEB00E6EFEA /* Brick back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brick back.png"; path = "partsforchemkit/Brick back.png"; sourceTree = "<group>"; };
+		EC34AB3B1D0F2CEB00E6EFEA /* Ca-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-ionized.png"; path = "partsforchemkit/Ca-ionized.png"; sourceTree = "<group>"; };
+		EC34AB3C1D0F2CEB00E6EFEA /* Ca-Norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-Norm.png"; path = "partsforchemkit/Ca-Norm.png"; sourceTree = "<group>"; };
+		EC34AB3D1D0F2CEB00E6EFEA /* Cu-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-ionized.png"; path = "partsforchemkit/Cu-ionized.png"; sourceTree = "<group>"; };
+		EC34AB3E1D0F2CEB00E6EFEA /* Cu-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-norm.png"; path = "partsforchemkit/Cu-norm.png"; sourceTree = "<group>"; };
+		EC34AB3F1D0F2CEB00E6EFEA /* Green Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Green Brick.png"; path = "partsforchemkit/Green Brick.png"; sourceTree = "<group>"; };
+		EC34AB401D0F2CEB00E6EFEA /* Li-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Li-ionized.png"; path = "partsforchemkit/Li-ionized.png"; sourceTree = "<group>"; };
+		EC34AB411D0F2CEB00E6EFEA /* Li-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Li-norm.png"; path = "partsforchemkit/Li-norm.png"; sourceTree = "<group>"; };
+		EC34AB421D0F2CEB00E6EFEA /* Na-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Na-ionized.png"; path = "partsforchemkit/Na-ionized.png"; sourceTree = "<group>"; };
+		EC34AB431D0F2CEB00E6EFEA /* Na-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Na-norm.png"; path = "partsforchemkit/Na-norm.png"; sourceTree = "<group>"; };
+		EC34AB441D0F2CEB00E6EFEA /* Orange Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Orange Brick.png"; path = "partsforchemkit/Orange Brick.png"; sourceTree = "<group>"; };
+		EC34AB451D0F2CEB00E6EFEA /* Red brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red brick.png"; path = "partsforchemkit/Red brick.png"; sourceTree = "<group>"; };
+		EC34AB461D0F2CEB00E6EFEA /* St-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-ionized.png"; path = "partsforchemkit/St-ionized.png"; sourceTree = "<group>"; };
+		EC34AB471D0F2CEB00E6EFEA /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-norm.png"; path = "partsforchemkit/St-norm.png"; sourceTree = "<group>"; };
+		EC34AB481D0F2CEB00E6EFEA /* Yellow Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yellow Brick.png"; path = "partsforchemkit/Yellow Brick.png"; sourceTree = "<group>"; };
 		EC6CF2F51CC4143D002C31BD /* ProColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6CF2F91CC4143D002C31BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6CF2FB1CC4143D002C31BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,8 +188,22 @@
 			children = (
 				3D5DEF701CF1EF1E003E635E /* Boy.png */,
 				3D8016821CC43A9B0030A97F /* SpawnBox.png */,
-				EC524FB71D0F196100CA99B0 /* reforgotba */,
-				EC524FB51D0F192100CA99B0 /* partsforchemkit */,
+				EC34AB381D0F2CDF00E6EFEA /* Ba-norm.png */,
+				EC34AB3A1D0F2CEB00E6EFEA /* Brick back.png */,
+				EC34AB3B1D0F2CEB00E6EFEA /* Ca-ionized.png */,
+				EC34AB3C1D0F2CEB00E6EFEA /* Ca-Norm.png */,
+				EC34AB3D1D0F2CEB00E6EFEA /* Cu-ionized.png */,
+				EC34AB3E1D0F2CEB00E6EFEA /* Cu-norm.png */,
+				EC34AB3F1D0F2CEB00E6EFEA /* Green Brick.png */,
+				EC34AB401D0F2CEB00E6EFEA /* Li-ionized.png */,
+				EC34AB411D0F2CEB00E6EFEA /* Li-norm.png */,
+				EC34AB421D0F2CEB00E6EFEA /* Na-ionized.png */,
+				EC34AB431D0F2CEB00E6EFEA /* Na-norm.png */,
+				EC34AB441D0F2CEB00E6EFEA /* Orange Brick.png */,
+				EC34AB451D0F2CEB00E6EFEA /* Red brick.png */,
+				EC34AB461D0F2CEB00E6EFEA /* St-ionized.png */,
+				EC34AB471D0F2CEB00E6EFEA /* St-norm.png */,
+				EC34AB481D0F2CEB00E6EFEA /* Yellow Brick.png */,
 				3D8016831CC43A9B0030A97F /* arrow.png */,
 				EC6CF2F91CC4143D002C31BD /* main.m */,
 			);
@@ -295,14 +337,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC34AB4C1D0F2CEB00E6EFEA /* Cu-ionized.png in Resources */,
+				EC34AB551D0F2CEB00E6EFEA /* St-ionized.png in Resources */,
+				EC34AB491D0F2CEB00E6EFEA /* Brick back.png in Resources */,
 				3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */,
+				EC34AB4A1D0F2CEB00E6EFEA /* Ca-ionized.png in Resources */,
+				EC34AB511D0F2CEB00E6EFEA /* Na-ionized.png in Resources */,
+				EC34AB4D1D0F2CEB00E6EFEA /* Cu-norm.png in Resources */,
 				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
+				EC34AB4F1D0F2CEB00E6EFEA /* Li-ionized.png in Resources */,
+				EC34AB4E1D0F2CEB00E6EFEA /* Green Brick.png in Resources */,
 				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
-				EC524FB61D0F192100CA99B0 /* partsforchemkit in Resources */,
-				EC524FB81D0F196100CA99B0 /* reforgotba in Resources */,
+				EC34AB4B1D0F2CEB00E6EFEA /* Ca-Norm.png in Resources */,
+				EC34AB501D0F2CEB00E6EFEA /* Li-norm.png in Resources */,
+				EC34AB541D0F2CEB00E6EFEA /* Red brick.png in Resources */,
+				EC34AB521D0F2CEB00E6EFEA /* Na-norm.png in Resources */,
+				EC34AB531D0F2CEB00E6EFEA /* Orange Brick.png in Resources */,
+				EC34AB571D0F2CEB00E6EFEA /* Yellow Brick.png in Resources */,
 				3D8016851CC43A9B0030A97F /* arrow.png in Resources */,
 				3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */,
+				EC34AB561D0F2CEB00E6EFEA /* St-norm.png in Resources */,
+				EC34AB391D0F2CDF00E6EFEA /* Ba-norm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

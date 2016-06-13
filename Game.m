@@ -62,27 +62,41 @@
 }
 
 -(void)SwitchObject{
-    int randomObject = rand() % 3;
+    int randomObject = rand() % 5;
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
-                Spawn.image=[UIImage imageNamed:@"Boy.png"];
+                Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
                 GreenBool = YES;
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
             case 1:
-                Spawn.image=[UIImage imageNamed:@"arrow.png"];
+                Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = NO;
-                OrangeBool = NO;
+                OrangeBool = YES;
                 break;
             case 2:
-                Spawn.image=[UIImage imageNamed:@"Boy.png"];
-                GreenBool = YES;
+                Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
+                GreenBool = NO;
+                RedBool = YES;
+                YellowBool = NO;
+                OrangeBool = NO;
+                break;
+            case 3:
+                Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
+                GreenBool = NO;
                 RedBool = NO;
+                YellowBool = YES;
+                OrangeBool = NO;
+                break;
+            case 4:
+                Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
+                GreenBool = NO;
+                RedBool = YES;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
@@ -94,10 +108,10 @@
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0://Left,Top,right,bottom G/R/Y/O
-                TopBox.image = [UIImage imageNamed:@""];
-                BottomBox.image = [UIImage imageNamed:@""];
-                LeftBox.image = [UIImage imageNamed:@""];
-                RightBox.image = [UIImage imageNamed:@""];
+                TopBox.image = [UIImage imageNamed:@"Red brick.png"];
+                BottomBox.image = [UIImage imageNamed:@"Orange Brick.png"];
+                LeftBox.image = [UIImage imageNamed:@"Green Brick.png"];
+                RightBox.image = [UIImage imageNamed:@"Yellow Brick.png"];
                 
                 GreenTop = NO;
                 GreenBottom = NO;
@@ -120,10 +134,10 @@
                 OrangeRight = NO;
                 break;
             case 1://Left,Top,right,bottom O/G/R/Y
-                TopBox.image = [UIImage imageNamed:@""];
-                BottomBox.image = [UIImage imageNamed:@""];
-                LeftBox.image = [UIImage imageNamed:@""];
-                RightBox.image = [UIImage imageNamed:@""];
+                TopBox.image = [UIImage imageNamed:@"Green Brick.png"];
+                BottomBox.image = [UIImage imageNamed:@"Yellow Brick.png"];
+                LeftBox.image = [UIImage imageNamed:@"Orange Brick.png"];
+                RightBox.image = [UIImage imageNamed:@"Red brick.png"];
                 
                 GreenTop = YES;
                 GreenBottom = NO;
@@ -146,10 +160,10 @@
                 OrangeRight = NO;
                 break;
             case 2://Left,Top,right,bottom Y/O/G/R
-                TopBox.image = [UIImage imageNamed:@""];
-                BottomBox.image = [UIImage imageNamed:@""];
-                LeftBox.image = [UIImage imageNamed:@""];
-                RightBox.image = [UIImage imageNamed:@""];
+                TopBox.image = [UIImage imageNamed:@"Orange Brick.png"];
+                BottomBox.image = [UIImage imageNamed:@"Red brick.png"];
+                LeftBox.image = [UIImage imageNamed:@"Yellow Brick.png"];
+                RightBox.image = [UIImage imageNamed:@"Green Brick.png"];
                 
                 GreenTop = NO;
                 GreenBottom = NO;
@@ -172,10 +186,10 @@
                 OrangeRight = NO;
                 break;
             case 3://Left,Top,right,bottom R/Y/O/G
-                TopBox.image = [UIImage imageNamed:@""];
-                BottomBox.image = [UIImage imageNamed:@""];
-                LeftBox.image = [UIImage imageNamed:@""];
-                RightBox.image = [UIImage imageNamed:@""];
+                TopBox.image = [UIImage imageNamed:@"Yellow Brick.png"];
+                BottomBox.image = [UIImage imageNamed:@"Green Brick.png"];
+                LeftBox.image = [UIImage imageNamed:@"Red brick.png"];
+                RightBox.image = [UIImage imageNamed:@"Orange Brick.png"];
                 
                 GreenTop = NO;
                 GreenBottom = YES;
@@ -304,10 +318,11 @@
     }
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
         ScoreNumber = ScoreNumber + 1;//300000
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
+
 }
 -(void)Countdown{
     CountdownNumber = CountdownNumber - 1;
@@ -327,6 +342,8 @@
     Spawn.userInteractionEnabled = NO;
     Spawn.hidden = YES;
     [ScoreTimer invalidate];
+    [SwitchColorTimer invalidate];
+    [SwitchObjectsTimer invalidate];
 }
 - (void)viewDidLoad {
     
