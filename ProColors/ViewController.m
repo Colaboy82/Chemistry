@@ -16,19 +16,21 @@
 
 - (void)viewDidLoad {
     
-    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
-    HighScoreLabel.text = [NSString stringWithFormat:@"High Score: %i", HighScoreNumber];
-
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     if([GKLocalPlayer localPlayer].authenticated == NO)
     {
         [[GKLocalPlayer localPlayer]
          authenticateWithCompletionHandler:^(NSError *error)
          {
-             NSLog(@"Error%@",error);
+             NSLog(@"Error%@", error);
          }];
     }
+    
+    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    HighScoreLabel.text = [NSString stringWithFormat:@"High Score: %i", HighScoreNumber];
+
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {

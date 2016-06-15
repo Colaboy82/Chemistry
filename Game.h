@@ -100,4 +100,6 @@ BOOL OrangeRight;
 -(void)SwipeUpMethod;
 -(void)SwipeDownMethod;
 
+-(IBAction)Back:(id)sender;
+
 @end

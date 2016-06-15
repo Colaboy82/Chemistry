@@ -14,6 +14,17 @@
 
 @implementation Game
 
+-(IBAction)Back:(id)sender{
+    [Boundaries invalidate];
+    [Hide invalidate];
+    [SpawnTimer invalidate];
+    [ScoreTimer invalidate];
+    [CountdownTimer invalidate];
+    [StartTimer invalidate];
+    [SwitchObjectsTimer invalidate];
+    [SwitchColorTimer invalidate];
+}
+
 //Pause and Resume Methods
 
 -(void)pauseLayer:(CALayer *)layer{
@@ -66,35 +77,35 @@
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
-                Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
+                //Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
                 GreenBool = YES;
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
             case 1:
-                Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
+                //Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = YES;
                 break;
             case 2:
-                Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
+                //Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
             case 3:
-                Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
+                //Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = YES;
                 OrangeBool = NO;
                 break;
             case 4:
-                Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
+                //Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
@@ -104,7 +115,7 @@
     }
 }
 -(void)SwitchColors{
-    int randomObject = rand() % 4;
+   /* int randomObject = rand() % 4;
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0://Left,Top,right,bottom G/R/Y/O
@@ -212,7 +223,7 @@
                 OrangeRight = YES;
                 break;
         }
-    }
+    }*/
 }
 
 -(void)SwipeLeftMethod{
@@ -318,10 +329,10 @@
     }
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
+   /* if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
         ScoreNumber = ScoreNumber + 1;//300000
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
-    }
+    }*/
 
 }
 -(void)Countdown{

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ux5-1o-MYh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ux5-1o-MYh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -129,6 +129,7 @@
                                 <rect key="frame" x="252" y="181" width="97" height="30"/>
                                 <state key="normal" title="Back To Menu"/>
                                 <connections>
+                                    <action selector="Back:" destination="kJA-1P-B5K" eventType="touchUpInside" id="y06-A4-9BC"/>
                                     <segue destination="Ux5-1o-MYh" kind="presentation" id="FsG-jI-4HK"/>
                                 </connections>
                             </button>
@@ -413,7 +414,6 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="Back" destination="qPj-Fe-4v5" id="8kH-n5-8Xg"/>
                         <outlet property="BottomBox" destination="mXo-vb-Fhe" id="b5b-Bv-cJQ"/>
                         <outlet property="CountdownLabel" destination="BTn-jw-cyq" id="7BK-1e-OGS"/>
                         <outlet property="LeftBox" destination="hu6-7M-YYt" id="mCz-3H-eOf"/>
@@ -502,29 +502,6 @@
                                     <rect key="frame" x="154" y="114" width="126" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-mZ-SW9">
-                                <rect key="frame" x="255" y="395" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="Aqg-YC-G5b">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="88"/>
-                                    </constraint>
-                                </constraints>
-                                <state key="normal" title="LeaderBoard"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="256" y="655" width="88" height="30"/>
-                                </variation>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="156" y="500" width="88" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="Aqg-YC-G5b"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="zVL-Ku-UzB" kind="presentation" id="tVN-2z-XJo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsn-gh-Lws">
                                 <rect key="frame" x="258" y="313" width="84" height="30"/>
                                 <state key="normal" title="How To Play"/>
@@ -542,59 +519,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CL4-j1-sLG" firstAttribute="top" secondItem="ak4-mZ-SW9" secondAttribute="bottom" constant="184" id="1HH-bL-hzQ">
-                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
-                            </constraint>
                             <constraint firstItem="IlP-kh-lgI" firstAttribute="top" secondItem="Df2-Ii-Xkd" secondAttribute="bottom" constant="31" id="3xR-IK-872">
                                 <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                             </constraint>
-                            <constraint firstItem="ak4-mZ-SW9" firstAttribute="leading" secondItem="Vfj-To-vtY" secondAttribute="leadingMargin" constant="235" id="40P-OB-toB"/>
                             <constraint firstItem="tFz-kR-7J5" firstAttribute="top" secondItem="Vfj-To-vtY" secondAttribute="top" constant="238" id="E1v-vl-HO0">
                                 <variation key="heightClass=regular-widthClass=compact" constant="237"/>
                             </constraint>
-                            <constraint firstItem="ak4-mZ-SW9" firstAttribute="centerX" secondItem="bsn-gh-Lws" secondAttribute="centerX" id="Fkv-Q8-2gY"/>
                             <constraint firstItem="lJm-Wy-zvh" firstAttribute="centerX" secondItem="tFz-kR-7J5" secondAttribute="centerX" id="JrD-U2-NX3"/>
                             <constraint firstAttribute="trailing" secondItem="lJm-Wy-zvh" secondAttribute="trailing" id="Ly3-Mx-zId"/>
-                            <constraint firstItem="CL4-j1-sLG" firstAttribute="top" secondItem="ak4-mZ-SW9" secondAttribute="bottom" constant="175" id="OjM-C8-xe6">
-                                <variation key="heightClass=regular-widthClass=compact" constant="184"/>
-                            </constraint>
                             <constraint firstItem="bsn-gh-Lws" firstAttribute="top" secondItem="tFz-kR-7J5" secondAttribute="bottom" constant="45" id="S7n-4X-w3y">
                                 <variation key="heightClass=regular-widthClass=compact" constant="60"/>
                             </constraint>
-                            <constraint firstItem="bsn-gh-Lws" firstAttribute="centerX" secondItem="ak4-mZ-SW9" secondAttribute="centerX" id="STa-ni-jHI"/>
-                            <constraint firstItem="ak4-mZ-SW9" firstAttribute="centerX" secondItem="bsn-gh-Lws" secondAttribute="centerX" id="ZN0-qi-BBY">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="tFz-kR-7J5" firstAttribute="centerX" secondItem="bsn-gh-Lws" secondAttribute="centerX" id="a9p-Xs-AeC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ak4-mZ-SW9" secondAttribute="trailing" constant="235" id="cNj-bv-TpC"/>
                             <constraint firstItem="lJm-Wy-zvh" firstAttribute="leading" secondItem="Vfj-To-vtY" secondAttribute="leading" id="jlO-wg-dWW"/>
                             <constraint firstItem="IlP-kh-lgI" firstAttribute="centerX" secondItem="lJm-Wy-zvh" secondAttribute="centerX" id="mDh-Q1-wE8"/>
                             <constraint firstItem="lJm-Wy-zvh" firstAttribute="top" secondItem="IlP-kh-lgI" secondAttribute="bottom" constant="45" id="sDK-Ru-QR8">
                                 <variation key="heightClass=regular-widthClass=compact" constant="24"/>
                             </constraint>
-                            <constraint firstItem="ak4-mZ-SW9" firstAttribute="leading" secondItem="Vfj-To-vtY" secondAttribute="leadingMargin" constant="136" id="zWs-ou-LSm"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="STa-ni-jHI"/>
-                                <exclude reference="Fkv-Q8-2gY"/>
-                                <exclude reference="ZN0-qi-BBY"/>
-                                <exclude reference="zWs-ou-LSm"/>
-                                <exclude reference="1HH-bL-hzQ"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="STa-ni-jHI"/>
-                                <exclude reference="40P-OB-toB"/>
-                                <include reference="Fkv-Q8-2gY"/>
-                                <exclude reference="ZN0-qi-BBY"/>
-                                <exclude reference="cNj-bv-TpC"/>
-                                <exclude reference="zWs-ou-LSm"/>
-                                <include reference="1HH-bL-hzQ"/>
-                                <exclude reference="OjM-C8-xe6"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
