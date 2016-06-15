@@ -28,29 +28,15 @@
 //Pause and Resume Methods
 
 -(void)pauseLayer:(CALayer *)layer{
-    
-    /*CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
-    layer.speed=0.0;
-    layer.timeOffset=pausedTime;*/
-   
     Spawn.userInteractionEnabled = NO;
     [CountdownTimer invalidate];
     [Boundaries invalidate];
 }
 
 -(void)resumeLayer:(CALayer *)layer{
-    
-    /*CFTimeInterval pausedTime =[layer timeOffset];
-    layer.speed=1.0;
-    layer.timeOffset=0.0;
-    layer.beginTime=0.0;
-    CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil]-pausedTime;
-    layer.beginTime = timeSincePause;*/
-
     CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
     Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
     Spawn.userInteractionEnabled = YES;
-
 }
 -(IBAction)Pause{
     
@@ -355,6 +341,11 @@
     [ScoreTimer invalidate];
     [SwitchColorTimer invalidate];
     [SwitchObjectsTimer invalidate];
+    SwitchToMenu = [NSTimer scheduledTimerWithTimeInterval:0.85 target:self selector:@selector(SwitchViewControllers) userInfo:nil repeats:NO];
+}
+-(void) SwitchViewControllers{
+    [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 - (void)viewDidLoad {
     

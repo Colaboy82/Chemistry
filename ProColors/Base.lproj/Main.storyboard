@@ -65,7 +65,7 @@
         <!--Game-->
         <scene sceneID="2Vp-vz-4bc">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="kJA-1P-B5K" customClass="Game" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" modalTransitionStyle="crossDissolve" id="kJA-1P-B5K" customClass="Game" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Fg-lu-bQW"/>
                         <viewControllerLayoutGuide type="bottom" id="WnI-4U-ivi"/>
@@ -414,6 +414,7 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="Back" destination="qPj-Fe-4v5" id="06X-A1-RJa"/>
                         <outlet property="BottomBox" destination="mXo-vb-Fhe" id="b5b-Bv-cJQ"/>
                         <outlet property="CountdownLabel" destination="BTn-jw-cyq" id="7BK-1e-OGS"/>
                         <outlet property="LeftBox" destination="hu6-7M-YYt" id="mCz-3H-eOf"/>
@@ -475,7 +476,7 @@
         <!--View Controller-->
         <scene sceneID="FDE-za-lww">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="Ux5-1o-MYh" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main Menu" modalTransitionStyle="crossDissolve" id="Ux5-1o-MYh" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Df2-Ii-Xkd"/>
                         <viewControllerLayoutGuide type="bottom" id="CL4-j1-sLG"/>

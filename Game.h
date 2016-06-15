@@ -92,6 +92,7 @@ BOOL OrangeRight;
     NSTimer *StartTimer;//Timer that counts 3, 2, 1
     NSTimer *SwitchObjectsTimer;//switches object that spawns
     NSTimer *SwitchColorTimer;//switches the colors
+    NSTimer *SwitchToMenu;
 }
 
 
