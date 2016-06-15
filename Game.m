@@ -29,9 +29,9 @@
 
 -(void)pauseLayer:(CALayer *)layer{
     
-    CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
+    /*CFTimeInterval pausedTime = [layer convertTime:CACurrentMediaTime() fromLayer:nil];
     layer.speed=0.0;
-    layer.timeOffset=pausedTime;
+    layer.timeOffset=pausedTime;*/
    
     Spawn.userInteractionEnabled = NO;
     [CountdownTimer invalidate];
@@ -40,12 +40,12 @@
 
 -(void)resumeLayer:(CALayer *)layer{
     
-    CFTimeInterval pausedTime =[layer timeOffset];
+    /*CFTimeInterval pausedTime =[layer timeOffset];
     layer.speed=1.0;
     layer.timeOffset=0.0;
     layer.beginTime=0.0;
     CFTimeInterval timeSincePause = [layer convertTime:CACurrentMediaTime() fromLayer:nil]-pausedTime;
-    layer.beginTime = timeSincePause;
+    layer.beginTime = timeSincePause;*/
 
     CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
     Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
@@ -77,35 +77,35 @@
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
-                //Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
+                Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
                 GreenBool = YES;
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
             case 1:
-                //Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
+                Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = YES;
                 break;
             case 2:
-                //Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
+                Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
                 OrangeBool = NO;
                 break;
             case 3:
-                //Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
+                Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = YES;
                 OrangeBool = NO;
                 break;
             case 4:
-                //Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
+                Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
@@ -329,10 +329,10 @@
     }
 }
 -(void)ScoreTracker{
-   /* if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
+    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
         ScoreNumber = ScoreNumber + 1;//300000
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
-    }*/
+    }
 
 }
 -(void)Countdown{
