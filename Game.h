@@ -16,8 +16,8 @@ BOOL Right;
 
 BOOL PauseTouch;//checks to see if paused; if it is the gestures will not be recognized
 
-double vertical = 63;//63
-double horizontal = 60;//70
+double vertical = 130;//63
+double horizontal = 80;//70
 
 int start;
 int CountdownNumber;
@@ -93,6 +93,7 @@ BOOL OrangeRight;
     NSTimer *SwitchObjectsTimer;//switches object that spawns
     NSTimer *SwitchColorTimer;//switches the colors
     NSTimer *SwitchToMenu;
+    NSTimer *MoveLeft;
 }
 
 

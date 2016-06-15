@@ -246,10 +246,10 @@
         Right = NO;
 }
 -(void)SwipeDownMethod{
-        Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical + 20);
+        Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical + 10);
         [UIView animateWithDuration:0.05
                          animations:^{
-                             Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical);
+                             Spawn.center = CGPointMake(Spawn.center.x, Spawn.center.y + vertical + 10);
                          }];
         Up = NO;
         Down = YES;
@@ -259,8 +259,8 @@
 
 -(void)BoundariesMethod{
     if(CGRectIntersectsRect(Spawn.frame, SpawnBox.frame)){
-        horizontal = 63;
-        vertical = 70;
+        horizontal = 80;
+        vertical = 130;
     }else{
         horizontal = 0;
         vertical = 0;
