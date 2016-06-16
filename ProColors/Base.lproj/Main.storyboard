@@ -74,7 +74,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" misplaced="YES" image="SpawnBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-Ol-YRs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="300" verticalHuggingPriority="300" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7b-Ol-YRs">
                                 <rect key="frame" x="-60" y="258" width="720" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="134" id="HFh-zk-IHV"/>
@@ -234,9 +234,8 @@
                                     <rect key="frame" x="103" y="480" width="217" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="91" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-6W-gsf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="107" placeholderIntrinsicHeight="91" translatesAutoresizingMaskIntoConstraints="NO" id="CMg-6W-gsf">
                                 <rect key="frame" x="247" y="275" width="107" height="91"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="133" id="3DM-06-yjL">
@@ -548,11 +547,73 @@
             </objects>
             <point key="canvasLocation" x="360" y="135"/>
         </scene>
+        <!--Lose View Controller-->
+        <scene sceneID="fCb-C8-Qp2">
+            <objects>
+                <viewController storyboardIdentifier="Lose" modalTransitionStyle="crossDissolve" id="3E6-ZJ-gxI" customClass="LoseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0rd-FJ-lbe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ggq-3F-t1X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gPn-bn-YLe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Lost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-6C-xOs">
+                                <rect key="frame" x="0.0" y="117" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="220" y="113" width="161" height="21"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="154" y="114" width="126" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTF-59-VtT">
+                                <rect key="frame" x="235" y="313" width="131" height="30"/>
+                                <state key="normal" title="Back to Main Menu"/>
+                                <connections>
+                                    <segue destination="Ux5-1o-MYh" kind="presentation" id="Qdm-fU-rWV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRE-IH-HdM">
+                                <rect key="frame" x="0.0" y="189" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="220" y="113" width="161" height="21"/>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="154" y="114" width="126" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="g5H-6C-xOs" firstAttribute="leading" secondItem="gPn-bn-YLe" secondAttribute="leading" id="7SD-Kc-HN6"/>
+                            <constraint firstItem="FRE-IH-HdM" firstAttribute="top" secondItem="g5H-6C-xOs" secondAttribute="bottom" constant="51" id="Hq3-AN-EH7"/>
+                            <constraint firstItem="g5H-6C-xOs" firstAttribute="leading" secondItem="FRE-IH-HdM" secondAttribute="leading" id="I1o-xW-Mdd"/>
+                            <constraint firstItem="Ggq-3F-t1X" firstAttribute="top" secondItem="VTF-59-VtT" secondAttribute="bottom" constant="257" id="Mh6-Gz-q5A"/>
+                            <constraint firstItem="g5H-6C-xOs" firstAttribute="centerX" secondItem="VTF-59-VtT" secondAttribute="centerX" id="eAr-si-lxQ"/>
+                            <constraint firstAttribute="trailing" secondItem="g5H-6C-xOs" secondAttribute="trailing" id="eJR-Mi-dew"/>
+                            <constraint firstItem="g5H-6C-xOs" firstAttribute="top" secondItem="0rd-FJ-lbe" secondAttribute="bottom" constant="97" id="emr-YC-JdV"/>
+                            <constraint firstItem="g5H-6C-xOs" firstAttribute="trailing" secondItem="FRE-IH-HdM" secondAttribute="trailing" id="sYq-3J-U54"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="ScoreLabel" destination="FRE-IH-HdM" id="m9a-Pg-kk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVM-tT-6bJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720" y="135"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="SpawnBox.png" width="720" height="720"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FsG-jI-4HK"/>
+        <segue reference="Qdm-fU-rWV"/>
     </inferredMetricsTieBreakers>
 </document>

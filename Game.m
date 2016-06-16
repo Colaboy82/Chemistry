@@ -23,6 +23,7 @@
     [StartTimer invalidate];
     [SwitchObjectsTimer invalidate];
     [SwitchColorTimer invalidate];
+    [LifeTimer invalidate];
 }
 
 //Pause and Resume Methods
@@ -286,7 +287,7 @@
     CountdownLabel.text = CountdownString;
     if(start == 0){
         [StartTimer invalidate];
-        
+        Spawn.hidden = NO;
         CountdownLabel.hidden = YES;
         Pause.hidden = NO;
         
@@ -315,24 +316,91 @@
     }
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && GreenLeft == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && Spawn.image==[UIImage imageNamed:@"Cu-ionized.png"] && LeftBox.image == [UIImage imageNamed:@"Green Brick.png"]){
-        ScoreNumber = ScoreNumber + 1;//300000
+    if(GreenBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+    }else if(RedBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+    }else if(OrangeBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+    }else if(YellowBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+        ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
     }
-
 }
 -(void)Countdown{
     CountdownNumber = CountdownNumber - 1;
     NSString *TimeLeft = [NSString stringWithFormat:@"Time Left: %i", CountdownNumber];
     Timer.text = TimeLeft;
     if(CountdownNumber == 0){
-        [CountdownTimer invalidate];
         [self EndGame];
-        if(ScoreNumber > HighScore){
-            HighScore = ScoreNumber;
-            [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
-            [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
-        }
+    }
+}
+-(void)LifeTracker{
+    //Green
+    if(GreenBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(GreenBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(GreenBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    //Red
+    if(RedBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(RedBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(RedBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    //Oragne
+    if(OrangeBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(OrangeBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(OrangeBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    //Yellow
+    if(YellowBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(YellowBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(YellowBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
     }
 }
 -(void)EndGame{//ends the game
@@ -341,11 +409,39 @@
     [ScoreTimer invalidate];
     [SwitchColorTimer invalidate];
     [SwitchObjectsTimer invalidate];
+    [CountdownTimer invalidate];
+    [LifeTimer invalidate];
+    if(ScoreNumber > HighScore){
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
+    }
     SwitchToMenu = [NSTimer scheduledTimerWithTimeInterval:0.85 target:self selector:@selector(SwitchViewControllers) userInfo:nil repeats:NO];
+}
+-(void)DeadEndGame{
+    Spawn.userInteractionEnabled = NO;
+    Spawn.hidden = YES;
+    [ScoreTimer invalidate];
+    [SwitchColorTimer invalidate];
+    [SwitchObjectsTimer invalidate];
+    [CountdownTimer invalidate];
+    [LifeTimer invalidate];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"ScoreSaved"];
+    
+    if(ScoreNumber > HighScore){
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
+    }
+    SwitchToLose = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchToLoseScreen) userInfo:nil repeats:NO];
 }
 -(void) SwitchViewControllers{
     [self dismissViewControllerAnimated:YES completion:nil];
-
+}
+-(void) SwitchToLoseScreen{
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Lose"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 - (void)viewDidLoad {
     
@@ -353,7 +449,10 @@
     //NSLog(@"y: %f",  Spawn.center.y);
     
     StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
-
+    LifeTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(LifeTracker) userInfo:nil repeats:YES];
+    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    
+    Spawn.hidden = YES;
     start = 3;
     ScoreNumber = 0;
     CountdownNumber = 60;
@@ -370,7 +469,6 @@
     Pause.hidden = YES;
     Resume.hidden = YES;
     Back.hidden = YES;
-    
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

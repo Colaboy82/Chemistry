@@ -23,6 +23,7 @@ int start;
 int CountdownNumber;
 int ScoreNumber;
 int HighScore;
+int Live;
 
 //Booleans for SpawnImage
 BOOL GreenBool;
@@ -93,7 +94,8 @@ BOOL OrangeRight;
     NSTimer *SwitchObjectsTimer;//switches object that spawns
     NSTimer *SwitchColorTimer;//switches the colors
     NSTimer *SwitchToMenu;
-    NSTimer *MoveLeft;
+    NSTimer *SwitchToLose;
+    NSTimer *LifeTimer; //timer that keeps track if the player has one life or not
 }
 
 
