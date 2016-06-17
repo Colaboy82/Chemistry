@@ -14,6 +14,8 @@ BOOL Down;
 BOOL Left;
 BOOL Right;
 
+BOOL ScoreBool;
+
 BOOL PauseTouch;//checks to see if paused; if it is the gestures will not be recognized
 
 double vertical = 130;//63
@@ -23,7 +25,6 @@ int start;
 int CountdownNumber;
 int ScoreNumber;
 int HighScore;
-int Live;
 
 //Booleans for SpawnImage
 BOOL GreenBool;
@@ -96,6 +97,7 @@ BOOL OrangeRight;
     NSTimer *SwitchToMenu;
     NSTimer *SwitchToLose;
     NSTimer *LifeTimer; //timer that keeps track if the player has one life or not
+    NSTimer *SpawnInBox;
 }
 
 

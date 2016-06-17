@@ -223,6 +223,7 @@
         Down = NO;
         Left = YES;
         Right = NO;
+    
 }
 -(void)SwipeRightMethod{
         Spawn.center = CGPointMake(Spawn.center.x + horizontal, Spawn.center.y);
@@ -265,21 +266,21 @@
     }else{
         horizontal = 0;
         vertical = 0;
-        Hide = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
+        Hide = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
     }
 }
 -(void)HideObject{
     Spawn.hidden = YES;
-    Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);//160,239
+    Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);
     //Spawn Object Timer
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
-    //Switch Color Timer
-    SwitchColorTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchColors) userInfo:nil repeats:NO];
     //Respawns image
     SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
 }
+
 -(void)Respawn{
     Spawn.hidden = NO;
+    ScoreBool = YES;
 }
 -(void)StartCountdown{
     start = start - 1;
@@ -316,22 +317,31 @@
     }
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+    if(GreenBool == YES && Left == YES && ScoreBool == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
-    }else if(RedBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        ScoreBool = NO;
+    }
+    if(RedBool == YES && Up == YES && ScoreBool == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
-    }else if(OrangeBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        ScoreBool = NO;
+    }
+    if(OrangeBool == YES && Down == YES && ScoreBool == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
-    }else if(YellowBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+        ScoreBool = NO;
+    }
+    if(YellowBool == YES && Right == YES && ScoreBool == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
     }
 }
 -(void)Countdown{
     CountdownNumber = CountdownNumber - 1;
+    //NSLog(@"x: %f",  Spawn.center.x);
+    //NSLog(@"y: %f",  Spawn.center.y);
     NSString *TimeLeft = [NSString stringWithFormat:@"Time Left: %i", CountdownNumber];
     Timer.text = TimeLeft;
     if(CountdownNumber == 0){
@@ -445,9 +455,6 @@
 }
 - (void)viewDidLoad {
     
-    //NSLog(@"x: %f",  Spawn.center.x);
-    //NSLog(@"y: %f",  Spawn.center.y);
-    
     StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
     LifeTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(LifeTracker) userInfo:nil repeats:YES];
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
@@ -462,6 +469,7 @@
     Left = NO;
     Right = NO;
     
+    ScoreBool = YES;
     PauseTouch = NO;
     
     Boundaries = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(BoundariesMethod) userInfo:nil repeats:YES];
