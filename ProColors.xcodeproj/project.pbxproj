@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D333C881D1328E80082AD75 /* Brick back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C791D1328E80082AD75 /* Brick back.png */; };
-		3D333C891D1328E80082AD75 /* Ca-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7A1D1328E80082AD75 /* Ca-ionized.png */; };
-		3D333C8A1D1328E80082AD75 /* Ca-Norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7B1D1328E80082AD75 /* Ca-Norm.png */; };
-		3D333C8B1D1328E80082AD75 /* Cu-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7C1D1328E80082AD75 /* Cu-ionized.png */; };
-		3D333C8C1D1328E80082AD75 /* Cu-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7D1D1328E80082AD75 /* Cu-norm.png */; };
-		3D333C8D1D1328E80082AD75 /* Green Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7E1D1328E80082AD75 /* Green Brick.png */; };
-		3D333C8E1D1328E80082AD75 /* Li-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C7F1D1328E80082AD75 /* Li-ionized.png */; };
-		3D333C8F1D1328E80082AD75 /* Li-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C801D1328E80082AD75 /* Li-norm.png */; };
-		3D333C901D1328E80082AD75 /* Na-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C811D1328E80082AD75 /* Na-ionized.png */; };
-		3D333C911D1328E80082AD75 /* Na-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C821D1328E80082AD75 /* Na-norm.png */; };
-		3D333C921D1328E80082AD75 /* Orange Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C831D1328E80082AD75 /* Orange Brick.png */; };
-		3D333C931D1328E80082AD75 /* Red brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C841D1328E80082AD75 /* Red brick.png */; };
-		3D333C941D1328E80082AD75 /* St-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C851D1328E80082AD75 /* St-ionized.png */; };
-		3D333C951D1328E80082AD75 /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C861D1328E80082AD75 /* St-norm.png */; };
-		3D333C961D1328E80082AD75 /* Yellow Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C871D1328E80082AD75 /* Yellow Brick.png */; };
 		3D333C991D1349540082AD75 /* LoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D333C981D1349540082AD75 /* LoseViewController.m */; };
+		3D333CAD1D15CCD00082AD75 /* Ba-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C9C1D15CCD00082AD75 /* Ba-ionized.png */; };
+		3D333CAE1D15CCD00082AD75 /* Ba-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C9D1D15CCD00082AD75 /* Ba-norm.png */; };
+		3D333CAF1D15CCD00082AD75 /* Brick back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C9E1D15CCD00082AD75 /* Brick back.png */; };
+		3D333CB01D15CCD00082AD75 /* Ca-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333C9F1D15CCD00082AD75 /* Ca-ionized.png */; };
+		3D333CB11D15CCD00082AD75 /* Ca-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA01D15CCD00082AD75 /* Ca-norm.png */; };
+		3D333CB21D15CCD00082AD75 /* Cu-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA11D15CCD00082AD75 /* Cu-ionized.png */; };
+		3D333CB31D15CCD00082AD75 /* Cu-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA21D15CCD00082AD75 /* Cu-norm.png */; };
+		3D333CB41D15CCD00082AD75 /* Green Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA31D15CCD00082AD75 /* Green Brick.png */; };
+		3D333CB51D15CCD00082AD75 /* Li-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA41D15CCD00082AD75 /* Li-ionized.png */; };
+		3D333CB61D15CCD00082AD75 /* Li-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA51D15CCD00082AD75 /* Li-norm.png */; };
+		3D333CB71D15CCD00082AD75 /* Na-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA61D15CCD00082AD75 /* Na-ionized.png */; };
+		3D333CB81D15CCD00082AD75 /* Na-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA71D15CCD00082AD75 /* Na-norm.png */; };
+		3D333CB91D15CCD00082AD75 /* Orange Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA81D15CCD00082AD75 /* Orange Brick.png */; };
+		3D333CBA1D15CCD00082AD75 /* Red brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CA91D15CCD00082AD75 /* Red brick.png */; };
+		3D333CBB1D15CCD00082AD75 /* St-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAA1D15CCD00082AD75 /* St-ionized.png */; };
+		3D333CBC1D15CCD00082AD75 /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAB1D15CCD00082AD75 /* St-norm.png */; };
+		3D333CBD1D15CCD00082AD75 /* Yellow Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAC1D15CCD00082AD75 /* Yellow Brick.png */; };
 		3D5513B41CC43EBB00414144 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5513B31CC43EBB00414144 /* Game.m */; };
 		3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DEF701CF1EF1E003E635E /* Boy.png */; };
 		3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016821CC43A9B0030A97F /* SpawnBox.png */; };
@@ -61,23 +63,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D333C791D1328E80082AD75 /* Brick back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brick back.png"; sourceTree = "<group>"; };
-		3D333C7A1D1328E80082AD75 /* Ca-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ca-ionized.png"; sourceTree = "<group>"; };
-		3D333C7B1D1328E80082AD75 /* Ca-Norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ca-Norm.png"; sourceTree = "<group>"; };
-		3D333C7C1D1328E80082AD75 /* Cu-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cu-ionized.png"; sourceTree = "<group>"; };
-		3D333C7D1D1328E80082AD75 /* Cu-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cu-norm.png"; sourceTree = "<group>"; };
-		3D333C7E1D1328E80082AD75 /* Green Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green Brick.png"; sourceTree = "<group>"; };
-		3D333C7F1D1328E80082AD75 /* Li-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Li-ionized.png"; sourceTree = "<group>"; };
-		3D333C801D1328E80082AD75 /* Li-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Li-norm.png"; sourceTree = "<group>"; };
-		3D333C811D1328E80082AD75 /* Na-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Na-ionized.png"; sourceTree = "<group>"; };
-		3D333C821D1328E80082AD75 /* Na-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Na-norm.png"; sourceTree = "<group>"; };
-		3D333C831D1328E80082AD75 /* Orange Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange Brick.png"; sourceTree = "<group>"; };
-		3D333C841D1328E80082AD75 /* Red brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red brick.png"; sourceTree = "<group>"; };
-		3D333C851D1328E80082AD75 /* St-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St-ionized.png"; sourceTree = "<group>"; };
-		3D333C861D1328E80082AD75 /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St-norm.png"; sourceTree = "<group>"; };
-		3D333C871D1328E80082AD75 /* Yellow Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow Brick.png"; sourceTree = "<group>"; };
 		3D333C971D1349540082AD75 /* LoseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoseViewController.h; path = ../LoseViewController.h; sourceTree = "<group>"; };
 		3D333C981D1349540082AD75 /* LoseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoseViewController.m; path = ../LoseViewController.m; sourceTree = "<group>"; };
+		3D333C9C1D15CCD00082AD75 /* Ba-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ba-ionized.png"; path = "../../../Downloads/mitchellmu/Ba-ionized.png"; sourceTree = "<group>"; };
+		3D333C9D1D15CCD00082AD75 /* Ba-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ba-norm.png"; path = "../../../Downloads/mitchellmu/Ba-norm.png"; sourceTree = "<group>"; };
+		3D333C9E1D15CCD00082AD75 /* Brick back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Brick back.png"; path = "../../../Downloads/mitchellmu/Brick back.png"; sourceTree = "<group>"; };
+		3D333C9F1D15CCD00082AD75 /* Ca-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-ionized.png"; path = "../../../Downloads/mitchellmu/Ca-ionized.png"; sourceTree = "<group>"; };
+		3D333CA01D15CCD00082AD75 /* Ca-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-norm.png"; path = "../../../Downloads/mitchellmu/Ca-norm.png"; sourceTree = "<group>"; };
+		3D333CA11D15CCD00082AD75 /* Cu-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-ionized.png"; path = "../../../Downloads/mitchellmu/Cu-ionized.png"; sourceTree = "<group>"; };
+		3D333CA21D15CCD00082AD75 /* Cu-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-norm.png"; path = "../../../Downloads/mitchellmu/Cu-norm.png"; sourceTree = "<group>"; };
+		3D333CA31D15CCD00082AD75 /* Green Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Green Brick.png"; path = "../../../Downloads/mitchellmu/Green Brick.png"; sourceTree = "<group>"; };
+		3D333CA41D15CCD00082AD75 /* Li-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Li-ionized.png"; path = "../../../Downloads/mitchellmu/Li-ionized.png"; sourceTree = "<group>"; };
+		3D333CA51D15CCD00082AD75 /* Li-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Li-norm.png"; path = "../../../Downloads/mitchellmu/Li-norm.png"; sourceTree = "<group>"; };
+		3D333CA61D15CCD00082AD75 /* Na-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Na-ionized.png"; path = "../../../Downloads/mitchellmu/Na-ionized.png"; sourceTree = "<group>"; };
+		3D333CA71D15CCD00082AD75 /* Na-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Na-norm.png"; path = "../../../Downloads/mitchellmu/Na-norm.png"; sourceTree = "<group>"; };
+		3D333CA81D15CCD00082AD75 /* Orange Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Orange Brick.png"; path = "../../../Downloads/mitchellmu/Orange Brick.png"; sourceTree = "<group>"; };
+		3D333CA91D15CCD00082AD75 /* Red brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red brick.png"; path = "../../../Downloads/mitchellmu/Red brick.png"; sourceTree = "<group>"; };
+		3D333CAA1D15CCD00082AD75 /* St-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-ionized.png"; path = "../../../Downloads/mitchellmu/St-ionized.png"; sourceTree = "<group>"; };
+		3D333CAB1D15CCD00082AD75 /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-norm.png"; path = "../../../Downloads/mitchellmu/St-norm.png"; sourceTree = "<group>"; };
+		3D333CAC1D15CCD00082AD75 /* Yellow Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yellow Brick.png"; path = "../../../Downloads/mitchellmu/Yellow Brick.png"; sourceTree = "<group>"; };
 		3D5513B21CC43EBB00414144 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		3D5513B31CC43EBB00414144 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Game.m; path = ../Game.m; sourceTree = "<group>"; tabWidth = 6; wrapsLines = 1; };
 		3D5DEF701CF1EF1E003E635E /* Boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy.png; sourceTree = "<group>"; };
@@ -189,21 +193,23 @@
 		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D333C791D1328E80082AD75 /* Brick back.png */,
-				3D333C7A1D1328E80082AD75 /* Ca-ionized.png */,
-				3D333C7B1D1328E80082AD75 /* Ca-Norm.png */,
-				3D333C7C1D1328E80082AD75 /* Cu-ionized.png */,
-				3D333C7D1D1328E80082AD75 /* Cu-norm.png */,
-				3D333C7E1D1328E80082AD75 /* Green Brick.png */,
-				3D333C7F1D1328E80082AD75 /* Li-ionized.png */,
-				3D333C801D1328E80082AD75 /* Li-norm.png */,
-				3D333C811D1328E80082AD75 /* Na-ionized.png */,
-				3D333C821D1328E80082AD75 /* Na-norm.png */,
-				3D333C831D1328E80082AD75 /* Orange Brick.png */,
-				3D333C841D1328E80082AD75 /* Red brick.png */,
-				3D333C851D1328E80082AD75 /* St-ionized.png */,
-				3D333C861D1328E80082AD75 /* St-norm.png */,
-				3D333C871D1328E80082AD75 /* Yellow Brick.png */,
+				3D333C9C1D15CCD00082AD75 /* Ba-ionized.png */,
+				3D333C9D1D15CCD00082AD75 /* Ba-norm.png */,
+				3D333C9E1D15CCD00082AD75 /* Brick back.png */,
+				3D333C9F1D15CCD00082AD75 /* Ca-ionized.png */,
+				3D333CA01D15CCD00082AD75 /* Ca-norm.png */,
+				3D333CA11D15CCD00082AD75 /* Cu-ionized.png */,
+				3D333CA21D15CCD00082AD75 /* Cu-norm.png */,
+				3D333CA31D15CCD00082AD75 /* Green Brick.png */,
+				3D333CA41D15CCD00082AD75 /* Li-ionized.png */,
+				3D333CA51D15CCD00082AD75 /* Li-norm.png */,
+				3D333CA61D15CCD00082AD75 /* Na-ionized.png */,
+				3D333CA71D15CCD00082AD75 /* Na-norm.png */,
+				3D333CA81D15CCD00082AD75 /* Orange Brick.png */,
+				3D333CA91D15CCD00082AD75 /* Red brick.png */,
+				3D333CAA1D15CCD00082AD75 /* St-ionized.png */,
+				3D333CAB1D15CCD00082AD75 /* St-norm.png */,
+				3D333CAC1D15CCD00082AD75 /* Yellow Brick.png */,
 				3D5DEF701CF1EF1E003E635E /* Boy.png */,
 				3D8016821CC43A9B0030A97F /* SpawnBox.png */,
 				3D8016831CC43A9B0030A97F /* arrow.png */,
@@ -339,27 +345,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D333C881D1328E80082AD75 /* Brick back.png in Resources */,
-				3D333C921D1328E80082AD75 /* Orange Brick.png in Resources */,
-				3D333C951D1328E80082AD75 /* St-norm.png in Resources */,
+				3D333CB21D15CCD00082AD75 /* Cu-ionized.png in Resources */,
+				3D333CBB1D15CCD00082AD75 /* St-ionized.png in Resources */,
+				3D333CAF1D15CCD00082AD75 /* Brick back.png in Resources */,
 				3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */,
+				3D333CB11D15CCD00082AD75 /* Ca-norm.png in Resources */,
+				3D333CB71D15CCD00082AD75 /* Na-ionized.png in Resources */,
+				3D333CB31D15CCD00082AD75 /* Cu-norm.png in Resources */,
+				3D333CB01D15CCD00082AD75 /* Ca-ionized.png in Resources */,
+				3D333CB51D15CCD00082AD75 /* Li-ionized.png in Resources */,
+				3D333CB41D15CCD00082AD75 /* Green Brick.png in Resources */,
 				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
-				3D333C901D1328E80082AD75 /* Na-ionized.png in Resources */,
+				3D333CAE1D15CCD00082AD75 /* Ba-norm.png in Resources */,
 				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
-				3D333C891D1328E80082AD75 /* Ca-ionized.png in Resources */,
-				3D333C911D1328E80082AD75 /* Na-norm.png in Resources */,
+				3D333CAD1D15CCD00082AD75 /* Ba-ionized.png in Resources */,
+				3D333CB61D15CCD00082AD75 /* Li-norm.png in Resources */,
+				3D333CBA1D15CCD00082AD75 /* Red brick.png in Resources */,
+				3D333CB81D15CCD00082AD75 /* Na-norm.png in Resources */,
+				3D333CB91D15CCD00082AD75 /* Orange Brick.png in Resources */,
+				3D333CBD1D15CCD00082AD75 /* Yellow Brick.png in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
-				3D333C8E1D1328E80082AD75 /* Li-ionized.png in Resources */,
-				3D333C961D1328E80082AD75 /* Yellow Brick.png in Resources */,
-				3D333C941D1328E80082AD75 /* St-ionized.png in Resources */,
-				3D333C8A1D1328E80082AD75 /* Ca-Norm.png in Resources */,
 				3D8016851CC43A9B0030A97F /* arrow.png in Resources */,
-				3D333C8B1D1328E80082AD75 /* Cu-ionized.png in Resources */,
+				3D333CBC1D15CCD00082AD75 /* St-norm.png in Resources */,
 				3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */,
-				3D333C931D1328E80082AD75 /* Red brick.png in Resources */,
-				3D333C8D1D1328E80082AD75 /* Green Brick.png in Resources */,
-				3D333C8F1D1328E80082AD75 /* Li-norm.png in Resources */,
-				3D333C8C1D1328E80082AD75 /* Cu-norm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

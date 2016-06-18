@@ -31,6 +31,7 @@ BOOL GreenBool;
 BOOL RedBool;
 BOOL YellowBool;
 BOOL OrangeBool;
+BOOL BadBool;
 
 //Top Booleans
 BOOL GreenTop;
@@ -98,6 +99,7 @@ BOOL OrangeRight;
     NSTimer *SwitchToLose;
     NSTimer *LifeTimer; //timer that keeps track if the player has one life or not
     NSTimer *SpawnInBox;
+    NSTimer *BadBoolTimer;
 }
 
 

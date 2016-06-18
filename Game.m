@@ -58,9 +58,12 @@
     PauseTouch = NO;
     Spawn.hidden = NO;
 }
-
+-(void)BadBoolMethod{
+    [self HideObject];
+    [BadBoolTimer invalidate];
+}
 -(void)SwitchObject{
-    int randomObject = rand() % 5;
+    int randomObject = rand() % 6;
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
@@ -69,6 +72,7 @@
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = NO;
+                BadBool = NO;
                 break;
             case 1:
                 Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
@@ -76,6 +80,7 @@
                 RedBool = NO;
                 YellowBool = NO;
                 OrangeBool = YES;
+                BadBool = NO;
                 break;
             case 2:
                 Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
@@ -83,6 +88,7 @@
                 RedBool = YES;
                 YellowBool = NO;
                 OrangeBool = NO;
+                BadBool = NO;
                 break;
             case 3:
                 Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
@@ -90,6 +96,7 @@
                 RedBool = NO;
                 YellowBool = YES;
                 OrangeBool = NO;
+                BadBool = NO;
                 break;
             case 4:
                 Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
@@ -97,6 +104,16 @@
                 RedBool = YES;
                 YellowBool = NO;
                 OrangeBool = NO;
+                BadBool = NO;
+                break;
+            case 5:
+                Spawn.image=[UIImage imageNamed:@"Boy.png"];//BAD
+                GreenBool = NO;
+                RedBool = NO;
+                YellowBool = NO;
+                OrangeBool = NO;
+                BadBool = YES;
+                BadBoolTimer = [NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(BadBoolMethod) userInfo:nil repeats:NO];
                 break;
         }
     }
@@ -266,16 +283,16 @@
     }else{
         horizontal = 0;
         vertical = 0;
-        Hide = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
+        Hide = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(HideObject) userInfo:nil repeats:NO];
     }
 }
 -(void)HideObject{
     Spawn.hidden = YES;
     Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);
     //Spawn Object Timer
-    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
     //Respawns image
-    SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
+    SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
 }
 
 -(void)Respawn{
@@ -408,6 +425,27 @@
         [self DeadEndGame];
     }
     if(YellowBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    //BAD
+    if(BadBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(BadBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(BadBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(BadBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
