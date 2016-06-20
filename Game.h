@@ -56,6 +56,12 @@ BOOL OrangeRight;
 
 @interface Game : UIViewController <GKLeaderboardViewControllerDelegate>
 {
+    //Arrows
+    IBOutlet UIImageView *LeftArrow;
+    IBOutlet UIImageView *RightArrow;
+    IBOutlet UIImageView *UpArrow;
+    IBOutlet UIImageView *DownArrow;
+    
     //Buttons
     IBOutlet UIButton *Pause;
     IBOutlet UIButton *Resume;
@@ -67,7 +73,6 @@ BOOL OrangeRight;
     IBOutlet UIImageView *BottomBox;
     IBOutlet UIImageView *LeftBox;
     IBOutlet UIImageView *RightBox;
-    IBOutlet UIImageView *Border;
     
     //Labels
     IBOutlet UILabel *Score;
@@ -76,15 +81,6 @@ BOOL OrangeRight;
     
     //Game Pieces
     IBOutlet UIImageView *Spawn; //Piece to be swiped
-    
-    IBOutlet UIImageView *Li; //Red
-    IBOutlet UIImageView *Ca; //Orange
-    IBOutlet UIImageView *Na; //Yellow
-    IBOutlet UIImageView *Cu; //Green
-    
-    //Extras
-    IBOutlet UIImageView *Ba; //Green
-    IBOutlet UIImageView *St; //Red
     
     //Timers
     NSTimer *Boundaries;//Checks that the spawned object does not leave the screen
@@ -100,6 +96,7 @@ BOOL OrangeRight;
     NSTimer *LifeTimer; //timer that keeps track if the player has one life or not
     NSTimer *SpawnInBox;
     NSTimer *BadBoolTimer;
+    NSTimer *ArrowHelper;
 }
 
 

@@ -117,6 +117,7 @@
                 break;
         }
     }
+    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:YES];
 }
 -(void)SwitchColors{
    /* int randomObject = rand() % 4;
@@ -288,6 +289,10 @@
 }
 -(void)HideObject{
     Spawn.hidden = YES;
+    UpArrow.hidden = YES;
+    DownArrow.hidden = YES;
+    LeftArrow.hidden = YES;
+    RightArrow.hidden = YES;
     Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);
     //Spawn Object Timer
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
@@ -331,6 +336,38 @@
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
         ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:YES];
+    }
+}
+-(void)ArrowHelperMethod{
+    if(GreenBool == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = NO;
+        RightArrow.hidden = YES;
+    }
+    if(RedBool == YES){
+        UpArrow.hidden = NO;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(YellowBool == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = NO;
+    }
+    if(OrangeBool == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = NO;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(BadBool == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
     }
 }
 -(void)ScoreTracker{
@@ -515,6 +552,11 @@
     Pause.hidden = YES;
     Resume.hidden = YES;
     Back.hidden = YES;
+    
+    UpArrow.hidden = YES;
+    DownArrow.hidden = YES;
+    LeftArrow.hidden = YES;
+    RightArrow.hidden = YES;
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
