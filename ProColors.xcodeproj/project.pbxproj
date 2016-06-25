@@ -25,9 +25,6 @@
 		3D333CBB1D15CCD00082AD75 /* St-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAA1D15CCD00082AD75 /* St-ionized.png */; };
 		3D333CBC1D15CCD00082AD75 /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAB1D15CCD00082AD75 /* St-norm.png */; };
 		3D333CBD1D15CCD00082AD75 /* Yellow Brick.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CAC1D15CCD00082AD75 /* Yellow Brick.png */; };
-		3D333CC11D1832170082AD75 /* GameCenter Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CBE1D1832170082AD75 /* GameCenter Button.png */; };
-		3D333CC21D1832170082AD75 /* How to play.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CBF1D1832170082AD75 /* How to play.png */; };
-		3D333CC31D1832170082AD75 /* Play button.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CC01D1832170082AD75 /* Play button.png */; };
 		3D333CC81D18352B0082AD75 /* arrowdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CC41D18352B0082AD75 /* arrowdown.png */; };
 		3D333CC91D18352B0082AD75 /* arrowleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CC51D18352B0082AD75 /* arrowleft.png */; };
 		3D333CCA1D18352B0082AD75 /* arrowright.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D333CC61D18352B0082AD75 /* arrowright.png */; };
@@ -36,6 +33,9 @@
 		3D5DEF711CF1EF1E003E635E /* Boy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DEF701CF1EF1E003E635E /* Boy.png */; };
 		3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016821CC43A9B0030A97F /* SpawnBox.png */; };
 		3D8016851CC43A9B0030A97F /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8016831CC43A9B0030A97F /* arrow.png */; };
+		3D91F78C1D1EBC640047ACC2 /* Game.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D91F7891D1EBC640047ACC2 /* Game.png */; };
+		3D91F78D1D1EBC640047ACC2 /* how.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D91F78A1D1EBC640047ACC2 /* how.png */; };
+		3D91F78E1D1EBC640047ACC2 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D91F78B1D1EBC640047ACC2 /* Play.png */; };
 		3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC41B01CFA7E0B00A47210 /* GameKit.framework */; };
 		3DB1DD281CFB64620018B5B3 /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */; };
 		3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD291CFB65860018B5B3 /* Foundation.framework */; };
@@ -89,9 +89,6 @@
 		3D333CAA1D15CCD00082AD75 /* St-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-ionized.png"; path = "../../../Downloads/mitchellmu/St-ionized.png"; sourceTree = "<group>"; };
 		3D333CAB1D15CCD00082AD75 /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "St-norm.png"; path = "../../../Downloads/mitchellmu/St-norm.png"; sourceTree = "<group>"; };
 		3D333CAC1D15CCD00082AD75 /* Yellow Brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yellow Brick.png"; path = "../../../Downloads/mitchellmu/Yellow Brick.png"; sourceTree = "<group>"; };
-		3D333CBE1D1832170082AD75 /* GameCenter Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GameCenter Button.png"; sourceTree = "<group>"; };
-		3D333CBF1D1832170082AD75 /* How to play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How to play.png"; sourceTree = "<group>"; };
-		3D333CC01D1832170082AD75 /* Play button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play button.png"; sourceTree = "<group>"; };
 		3D333CC41D18352B0082AD75 /* arrowdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowdown.png; sourceTree = "<group>"; };
 		3D333CC51D18352B0082AD75 /* arrowleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowleft.png; sourceTree = "<group>"; };
 		3D333CC61D18352B0082AD75 /* arrowright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowright.png; sourceTree = "<group>"; };
@@ -101,6 +98,9 @@
 		3D5DEF701CF1EF1E003E635E /* Boy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boy.png; sourceTree = "<group>"; };
 		3D8016821CC43A9B0030A97F /* SpawnBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpawnBox.png; sourceTree = "<group>"; };
 		3D8016831CC43A9B0030A97F /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		3D91F7891D1EBC640047ACC2 /* Game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Game.png; sourceTree = "<group>"; };
+		3D91F78A1D1EBC640047ACC2 /* how.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = how.png; sourceTree = "<group>"; };
+		3D91F78B1D1EBC640047ACC2 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
 		3DB1DD261CFB64620018B5B3 /* GameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterViewController.h; path = ../GameCenterViewController.h; sourceTree = "<group>"; };
 		3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenterViewController.m; path = ../GameCenterViewController.m; sourceTree = "<group>"; };
 		3DB1DD291CFB65860018B5B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -207,13 +207,13 @@
 		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D91F7891D1EBC640047ACC2 /* Game.png */,
+				3D91F78A1D1EBC640047ACC2 /* how.png */,
+				3D91F78B1D1EBC640047ACC2 /* Play.png */,
 				3D333CC41D18352B0082AD75 /* arrowdown.png */,
 				3D333CC51D18352B0082AD75 /* arrowleft.png */,
 				3D333CC61D18352B0082AD75 /* arrowright.png */,
 				3D333CC71D18352B0082AD75 /* arrowup.png */,
-				3D333CBE1D1832170082AD75 /* GameCenter Button.png */,
-				3D333CBF1D1832170082AD75 /* How to play.png */,
-				3D333CC01D1832170082AD75 /* Play button.png */,
 				3D333C9C1D15CCD00082AD75 /* Ba-ionized.png */,
 				3D333C9D1D15CCD00082AD75 /* Ba-norm.png */,
 				3D333C9E1D15CCD00082AD75 /* Brick back.png */,
@@ -366,7 +366,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D333CC31D1832170082AD75 /* Play button.png in Resources */,
 				3D333CB21D15CCD00082AD75 /* Cu-ionized.png in Resources */,
 				3D333CBB1D15CCD00082AD75 /* St-ionized.png in Resources */,
 				3D333CAF1D15CCD00082AD75 /* Brick back.png in Resources */,
@@ -384,18 +383,19 @@
 				3D333CB61D15CCD00082AD75 /* Li-norm.png in Resources */,
 				3D333CBA1D15CCD00082AD75 /* Red brick.png in Resources */,
 				3D333CB81D15CCD00082AD75 /* Na-norm.png in Resources */,
+				3D91F78C1D1EBC640047ACC2 /* Game.png in Resources */,
 				3D333CC91D18352B0082AD75 /* arrowleft.png in Resources */,
 				3D333CB91D15CCD00082AD75 /* Orange Brick.png in Resources */,
+				3D91F78D1D1EBC640047ACC2 /* how.png in Resources */,
 				3D333CC81D18352B0082AD75 /* arrowdown.png in Resources */,
-				3D333CC21D1832170082AD75 /* How to play.png in Resources */,
 				3D333CCA1D18352B0082AD75 /* arrowright.png in Resources */,
 				3D333CBD1D15CCD00082AD75 /* Yellow Brick.png in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
 				3D8016851CC43A9B0030A97F /* arrow.png in Resources */,
 				3D333CCB1D18352B0082AD75 /* arrowup.png in Resources */,
+				3D91F78E1D1EBC640047ACC2 /* Play.png in Resources */,
 				3D333CBC1D15CCD00082AD75 /* St-norm.png in Resources */,
 				3D8016841CC43A9B0030A97F /* SpawnBox.png in Resources */,
-				3D333CC11D1832170082AD75 /* GameCenter Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

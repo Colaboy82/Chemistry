@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -220,42 +220,42 @@
                                 <rect key="frame" x="120" y="70" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lJm-Wy-zvh">
                                 <rect key="frame" x="0.0" y="115" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bsn-gh-Lws">
-                                <rect key="frame" x="97" y="316" width="126" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="How to play.png"/>
-                                <connections>
-                                    <segue destination="uCn-gq-xkS" kind="modal" id="Yoj-rT-IkE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tFz-kR-7J5">
-                                <rect key="frame" x="97" y="193" width="126" height="87"/>
+                                <rect key="frame" x="40" y="193" width="241" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play button.png"/>
+                                <state key="normal" image="Play.png"/>
                                 <connections>
                                     <segue destination="kJA-1P-B5K" kind="modal" id="vP9-Nc-8TI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UP7-BU-bwG">
-                                <rect key="frame" x="97" y="445" width="126" height="93"/>
+                                <rect key="frame" x="40" y="446" width="241" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" image="GameCenter Button.png"/>
+                                <state key="normal" image="Game.png"/>
                                 <connections>
-                                    <segue destination="clk-nu-4r2" kind="modal" id="dxc-cv-aSa"/>
+                                    <segue destination="clk-nu-4r2" kind="modal" id="g33-El-GnH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bsn-gh-Lws">
+                                <rect key="frame" x="40" y="311" width="241" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="how.png"/>
+                                <connections>
+                                    <segue destination="uCn-gq-xkS" kind="modal" id="uSe-lB-sKX"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
@@ -310,13 +310,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GameCenter Button.png" width="200" height="200"/>
-        <image name="How to play.png" width="200" height="200"/>
-        <image name="Play button.png" width="200" height="200"/>
+        <image name="Game.png" width="750" height="351"/>
+        <image name="Play.png" width="750" height="351"/>
         <image name="arrowdown.png" width="100" height="200"/>
         <image name="arrowleft.png" width="200" height="100"/>
         <image name="arrowright.png" width="200" height="100"/>
         <image name="arrowup.png" width="100" height="200"/>
+        <image name="how.png" width="750" height="351"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FsG-jI-4HK"/>
