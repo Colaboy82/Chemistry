@@ -63,7 +63,7 @@
     [BadBoolTimer invalidate];
 }
 -(void)SwitchObject{
-    int randomObject = rand() % 6;
+    int randomObject = rand() % 5;
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
@@ -106,7 +106,7 @@
                 OrangeBool = NO;
                 BadBool = NO;
                 break;
-            case 5:
+            /*case 5:
                 Spawn.image=[UIImage imageNamed:@"Boy.png"];//BAD
                 GreenBool = NO;
                 RedBool = NO;
@@ -114,13 +114,13 @@
                 OrangeBool = NO;
                 BadBool = YES;
                 BadBoolTimer = [NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(BadBoolMethod) userInfo:nil repeats:NO];
-                break;
+                break;*/
         }
     }
-    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:YES];
+    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:7.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:YES];
 }
 -(void)SwitchColors{
-   /* int randomObject = rand() % 4;
+    int randomObject = rand() % 4;
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0://Left,Top,right,bottom G/R/Y/O
@@ -228,7 +228,7 @@
                 OrangeRight = YES;
                 break;
         }
-    }*/
+    }
 }
 
 -(void)SwipeLeftMethod{
@@ -296,8 +296,12 @@
     Spawn.center = CGPointMake(SpawnBox.center.x ,SpawnBox.center.y);
     //Spawn Object Timer
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    //Switches Boundaries Color
+    SwitchColorTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchColors) userInfo:nil repeats:NO];
     //Respawns image
     SpawnTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(Respawn) userInfo:nil repeats:NO];
+    //Score
+    ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:NO];
 }
 
 -(void)Respawn{
@@ -335,58 +339,198 @@
         
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
-        ScoreTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(ScoreTracker) userInfo:nil repeats:YES];
     }
 }
 -(void)ArrowHelperMethod{
-    if(GreenBool == YES){
-        UpArrow.hidden = YES;
-        DownArrow.hidden = YES;
-        LeftArrow.hidden = NO;
-        RightArrow.hidden = YES;
-    }
-    if(RedBool == YES){
+    //Green
+    if(GreenBool == YES && GreenTop == YES){
         UpArrow.hidden = NO;
         DownArrow.hidden = YES;
         LeftArrow.hidden = YES;
         RightArrow.hidden = YES;
     }
-    if(YellowBool == YES){
-        UpArrow.hidden = YES;
-        DownArrow.hidden = YES;
-        LeftArrow.hidden = YES;
-        RightArrow.hidden = NO;
-    }
-    if(OrangeBool == YES){
+    if(GreenBool == YES && GreenBottom == YES){
         UpArrow.hidden = YES;
         DownArrow.hidden = NO;
         LeftArrow.hidden = YES;
         RightArrow.hidden = YES;
     }
-    if(BadBool == YES){
+    if(GreenBool == YES && GreenLeft == YES){
         UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = NO;
+        RightArrow.hidden = YES;
+    }
+    if(GreenBool == YES && GreenRight == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = NO;
+    }
+    //Red
+    if(RedBool == YES && RedTop == YES){
+        UpArrow.hidden = NO;
         DownArrow.hidden = YES;
         LeftArrow.hidden = YES;
         RightArrow.hidden = YES;
     }
+    if(RedBool == YES && RedBottom == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = NO;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(RedBool == YES && RedLeft == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = NO;
+        RightArrow.hidden = YES;
+    }
+    if(RedBool == YES && RedRight == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = NO;
+    }
+    //Yellow
+    if(YellowBool == YES && YellowTop == YES){
+        UpArrow.hidden = NO;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(YellowBool == YES && YellowBottom == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = NO;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(YellowBool == YES && YellowLeft == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = NO;
+        RightArrow.hidden = YES;
+    }
+    if(YellowBool == YES && YellowRight == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = NO;
+    }
+    //Orange
+    if(OrangeBool == YES && OrangeTop == YES){
+        UpArrow.hidden = NO;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(OrangeBool == YES && OrangeBottom == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = NO;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }
+    if(OrangeBool == YES && OrangeLeft == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = NO;
+        RightArrow.hidden = YES;
+    }
+    if(OrangeBool == YES && OrangeRight == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = NO;
+    }
+    //Bad
+    /*if(BadBool == YES){
+        UpArrow.hidden = YES;
+        DownArrow.hidden = YES;
+        LeftArrow.hidden = YES;
+        RightArrow.hidden = YES;
+    }*/
 }
 -(void)ScoreTracker{
-    if(GreenBool == YES && Left == YES && ScoreBool == YES){
+    //Green
+    if(GreenBool == YES && Left == YES && ScoreBool == YES && GreenLeft == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
         ScoreBool = NO;
     }
-    if(RedBool == YES && Up == YES && ScoreBool == YES){
+    if(GreenBool == YES && Right == YES && ScoreBool == YES && GreenRight == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
         ScoreBool = NO;
     }
-    if(OrangeBool == YES && Down == YES && ScoreBool == YES){
+    if(GreenBool == YES && Up == YES && ScoreBool == YES && GreenTop == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
         ScoreBool = NO;
     }
-    if(YellowBool == YES && Right == YES && ScoreBool == YES){
+    if(GreenBool == YES && Down == YES && ScoreBool == YES && GreenBottom == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    //Red
+    if(RedBool == YES && Up == YES && ScoreBool == YES && RedTop == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(RedBool == YES && Down == YES && ScoreBool == YES && RedBottom == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(RedBool == YES && Left == YES && ScoreBool == YES && RedLeft == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(RedBool == YES && Right == YES && ScoreBool == YES && RedRight == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    //Orange
+    if(OrangeBool == YES && Down == YES && ScoreBool == YES && OrangeBottom == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(OrangeBool == YES && Up == YES && ScoreBool == YES && OrangeTop == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(OrangeBool == YES && Left == YES && ScoreBool == YES && OrangeLeft == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(OrangeBool == YES && Right == YES && ScoreBool == YES && OrangeRight == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    //Yellow
+    if(YellowBool == YES && Right == YES && ScoreBool == YES && YellowRight == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(YellowBool == YES && Left == YES && ScoreBool == YES && YellowLeft == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(YellowBool == YES && Up == YES && ScoreBool == YES && YellowTop == YES){
+        ScoreNumber = ScoreNumber + 1;
+        Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+        ScoreBool = NO;
+    }
+    if(YellowBool == YES && Down == YES && ScoreBool == YES && YellowBottom == YES){
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
         ScoreBool = NO;
@@ -404,70 +548,90 @@
 }
 -(void)LifeTracker{
     //Green
-    if(GreenBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+    if(GreenBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && GreenTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(GreenBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+    if(GreenBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && GreenBottom == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(GreenBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+    if(GreenBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame) && GreenRight == NO){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(GreenBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && GreenLeft == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
     //Red
-    if(RedBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+    if(RedBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && RedBottom == NO){
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(RedBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+    if(RedBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && RedLeft == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(RedBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+    if(RedBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame) && RedRight == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    //Oragne
-    if(OrangeBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+    if(RedBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && RedTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(OrangeBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+    //Orange
+    if(OrangeBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && OrangeTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(OrangeBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame)){
+    if(OrangeBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && OrangeLeft == NO){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(OrangeBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame) && OrangeRight == NO){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(OrangeBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && OrangeBottom == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
     //Yellow
-    if(YellowBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+    if(YellowBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && YellowTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(YellowBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame)){
+    if(YellowBool == YES && CGRectIntersectsRect(LeftBox.frame, Spawn.frame) && YellowLeft == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(YellowBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame)){
+    if(YellowBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && YellowBottom == NO){
+        Spawn.hidden = YES;
+        [SwitchObjectsTimer invalidate];
+        [self DeadEndGame];
+    }
+    if(YellowBool == YES && CGRectIntersectsRect(RightBox.frame, Spawn.frame) && YellowRight == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
     //BAD
-    if(BadBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
+    /*if(BadBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame)){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
@@ -486,7 +650,7 @@
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
-    }
+    }*/
 }
 -(void)EndGame{//ends the game
     Spawn.userInteractionEnabled = NO;
@@ -501,7 +665,7 @@
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
         [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
     }
-    SwitchToMenu = [NSTimer scheduledTimerWithTimeInterval:0.85 target:self selector:@selector(SwitchViewControllers) userInfo:nil repeats:NO];
+    SwitchToMenu = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchViewControllers) userInfo:nil repeats:NO];
 }
 -(void)DeadEndGame{
     Spawn.userInteractionEnabled = NO;
@@ -522,7 +686,8 @@
     SwitchToLose = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchToLoseScreen) userInfo:nil repeats:NO];
 }
 -(void) SwitchViewControllers{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"Win"];
+    [self presentViewController:vcW animated:YES completion:nil];
 }
 -(void) SwitchToLoseScreen{
     UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Lose"];
