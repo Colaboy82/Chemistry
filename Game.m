@@ -67,7 +67,7 @@
     if(Spawn.hidden == YES){
         switch (randomObject) {
             case 0:
-                Spawn.image=[UIImage imageNamed:@"Cu-ionized.png"];//Green
+                Spawn.image=[UIImage imageNamed:@"Cu-norm.png"];//Green
                 GreenBool = YES;
                 RedBool = NO;
                 YellowBool = NO;
@@ -75,7 +75,7 @@
                 BadBool = NO;
                 break;
             case 1:
-                Spawn.image=[UIImage imageNamed:@"Ca-ionized.png"];//Orange
+                Spawn.image=[UIImage imageNamed:@"Ca-norm.png"];//Orange
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = NO;
@@ -83,7 +83,7 @@
                 BadBool = NO;
                 break;
             case 2:
-                Spawn.image=[UIImage imageNamed:@"Li-ionized.png"];//Red
+                Spawn.image=[UIImage imageNamed:@"Li-norm.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
@@ -91,7 +91,7 @@
                 BadBool = NO;
                 break;
             case 3:
-                Spawn.image=[UIImage imageNamed:@"Na-ionized.png"];//Yellow
+                Spawn.image=[UIImage imageNamed:@"Na-norm.png"];//Yellow
                 GreenBool = NO;
                 RedBool = NO;
                 YellowBool = YES;
@@ -99,7 +99,7 @@
                 BadBool = NO;
                 break;
             case 4:
-                Spawn.image=[UIImage imageNamed:@"St-ionized.png"];//Red
+                Spawn.image=[UIImage imageNamed:@"St-norm.png"];//Red
                 GreenBool = NO;
                 RedBool = YES;
                 YellowBool = NO;
@@ -117,7 +117,7 @@
                 break;*/
         }
     }
-    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:7.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:YES];
+    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:20.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:NO];
 }
 -(void)SwitchColors{
     int randomObject = rand() % 4;
@@ -668,7 +668,7 @@
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
-        [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Color_Swipe_High_Score"];
     }
     SwitchToMenu = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchViewControllers) userInfo:nil repeats:NO];
 }
@@ -686,12 +686,12 @@
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
-        [self updateScore:ScoreNumber forLeaderboardID:@"Pro_Colors_Score"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Color_Swipe_High_Score"];
     }
     SwitchToLose = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(SwitchToLoseScreen) userInfo:nil repeats:NO];
 }
 -(void) SwitchViewControllers{
-    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"Win"];
+    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"Time"];
     [self presentViewController:vcW animated:YES completion:nil];
 }
 -(void) SwitchToLoseScreen{
