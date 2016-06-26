@@ -32,6 +32,7 @@
     Spawn.userInteractionEnabled = NO;
     [CountdownTimer invalidate];
     [Boundaries invalidate];
+    [ArrowHelper invalidate];
 }
 
 -(void)resumeLayer:(CALayer *)layer{
@@ -47,6 +48,10 @@
     Pause.hidden = YES;
     PauseTouch = YES;
     Spawn.hidden = YES;
+    UpArrow.hidden = YES;
+    DownArrow.hidden = YES;
+    LeftArrow.hidden = YES;
+    RightArrow.hidden = YES;
 }
 
 -(IBAction)Resume{
@@ -117,7 +122,7 @@
                 break;*/
         }
     }
-    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:20.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:NO];
+    ArrowHelper = [NSTimer scheduledTimerWithTimeInterval:30.0 target:self selector:@selector(ArrowHelperMethod) userInfo:nil repeats:NO];
 }
 -(void)SwitchColors{
     int randomObject = rand() % 4;
@@ -461,6 +466,7 @@
         ScoreNumber = ScoreNumber + 1;
         Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
         ScoreBool = NO;
+        Dead = NO;
     }
     if(GreenBool == YES && Right == YES && ScoreBool == YES && GreenRight == YES){
         ScoreNumber = ScoreNumber + 1;
@@ -553,12 +559,12 @@
 }
 -(void)LifeTracker{
     //Green
-    if(GreenBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && GreenTop == NO){
+    if(GreenBool == YES && Spawn.center.y < 100 && GreenTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(GreenBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && GreenBottom == NO){
+    if(GreenBool == YES && Spawn.center.y > 500 && GreenBottom == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
@@ -574,7 +580,8 @@
         [self DeadEndGame];
     }
     //Red
-    if(RedBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && RedBottom == NO){
+    if(RedBool == YES && Spawn.center.y > 500 && RedBottom == NO){
+        Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
@@ -588,13 +595,13 @@
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(RedBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && RedTop == NO){
+    if(RedBool == YES && Spawn.center.y < 100 && RedTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
     //Orange
-    if(OrangeBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && OrangeTop == NO){
+    if(OrangeBool == YES && Spawn.center.y < 100 && OrangeTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
@@ -609,13 +616,13 @@
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(OrangeBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && OrangeBottom == NO){
+    if(OrangeBool == YES && Spawn.center.y > 500 && OrangeBottom == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
     //Yellow
-    if(YellowBool == YES && CGRectIntersectsRect(TopBox.frame, Spawn.frame) && YellowTop == NO){
+    if(YellowBool == YES && Spawn.center.y < 100 && YellowTop == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
@@ -625,7 +632,7 @@
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
     }
-    if(YellowBool == YES && CGRectIntersectsRect(BottomBox.frame, Spawn.frame) && YellowBottom == NO){
+    if(YellowBool == YES && Spawn.center.y > 500 && YellowBottom == NO){
         Spawn.hidden = YES;
         [SwitchObjectsTimer invalidate];
         [self DeadEndGame];
@@ -665,6 +672,9 @@
     [SwitchObjectsTimer invalidate];
     [CountdownTimer invalidate];
     [LifeTimer invalidate];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"ScoreSaved"];
+    
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
@@ -703,6 +713,7 @@
     StartTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(StartCountdown) userInfo:nil repeats:YES];
     LifeTimer = [NSTimer scheduledTimerWithTimeInterval:.01 target:self selector:@selector(LifeTracker) userInfo:nil repeats:YES];
     SwitchObjectsTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(SwitchObject) userInfo:nil repeats:NO];
+    SwitchColorTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(SwitchColors) userInfo:nil repeats:NO];
     
     Spawn.hidden = YES;
     start = 3;
@@ -732,7 +743,6 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
 }
 
 

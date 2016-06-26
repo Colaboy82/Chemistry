@@ -143,10 +143,6 @@
                                 <rect key="frame" x="206" y="265" width="51" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4TD-vi-kdh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -155,7 +151,6 @@
                     <connections>
                         <outlet property="Back" destination="qPj-Fe-4v5" id="06X-A1-RJa"/>
                         <outlet property="BottomBox" destination="mXo-vb-Fhe" id="b5b-Bv-cJQ"/>
-                        <outlet property="ColorGuide" destination="4TD-vi-kdh" id="Hbt-AE-UVP"/>
                         <outlet property="CountdownLabel" destination="BTn-jw-cyq" id="7BK-1e-OGS"/>
                         <outlet property="DownArrow" destination="KIM-u9-d7F" id="tKw-CK-DCs"/>
                         <outlet property="LeftArrow" destination="O22-BE-Ekj" id="ktm-Gh-3fE"/>
@@ -179,7 +174,7 @@
         <!--Game Center View Controller-->
         <scene sceneID="5a3-gX-gt8">
             <objects>
-                <viewController id="clk-nu-4r2" customClass="GameCenterViewController" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" id="clk-nu-4r2" customClass="GameCenterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tON-n2-88Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,6 +496,6 @@
         <image name="how.png" width="750" height="351"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tyn-2L-fhM"/>
+        <segue reference="Ds7-d9-Wzw"/>
     </inferredMetricsTieBreakers>
 </document>

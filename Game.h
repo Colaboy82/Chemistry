@@ -14,11 +14,13 @@ BOOL Down;
 BOOL Left;
 BOOL Right;
 
+BOOL Dead;
+
 BOOL ScoreBool;
 
 BOOL PauseTouch;//checks to see if paused; if it is the gestures will not be recognized
 
-double vertical = 130;//63
+double vertical = 150;//63
 double horizontal = 80;//70
 
 int start;
