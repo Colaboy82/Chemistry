@@ -345,6 +345,7 @@
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
         ColorGuideTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(HideColorGuide) userInfo:nil repeats:NO];
+        SpawnBox.hidden = NO;
     }
 }
 -(void)HideColorGuide{
@@ -716,6 +717,7 @@
     SwitchColorTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(SwitchColors) userInfo:nil repeats:NO];
     
     Spawn.hidden = YES;
+    SpawnBox.hidden = YES;
     start = 3;
     ScoreNumber = 0;
     CountdownNumber = 60;

@@ -8,17 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RightColorChange : UIViewController
+@interface AcidOrBase : UIViewController
 {
-    //Options
-    IBOutlet UIImageView *Option1;
-    IBOutlet UIImageView *Option2;
-    IBOutlet UIImageView *Option3;
-    
-    //Color
-    IBOutlet UIImageView *Color1;
-    IBOutlet UIImageView *Color2;
-    IBOutlet UIImageView *Color3;
+
     
     //GamePiece
     IBOutlet UIImageView *Spawn;

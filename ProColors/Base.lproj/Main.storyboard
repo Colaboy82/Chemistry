@@ -227,35 +227,15 @@
             </objects>
             <point key="canvasLocation" x="746" y="892"/>
         </scene>
-        <!--Right Color Change-->
+        <!--Acid Or Base-->
         <scene sceneID="IZm-Od-cOx">
             <objects>
-                <viewController storyboardIdentifier="RightColorChange" modalTransitionStyle="crossDissolve" id="xnG-Dg-yTg" customClass="RightColorChange" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AcidOrBase" modalTransitionStyle="crossDissolve" id="xnG-Dg-yTg" customClass="AcidOrBase" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7vc-pL-QvC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xOJ-Zi-7G1">
-                                <rect key="frame" x="5" y="161" width="92" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Nnj-Ow-8ee">
-                                <rect key="frame" x="22" y="81" width="59" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="aSW-c4-UdW">
-                                <rect key="frame" x="131" y="81" width="59" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="EP3-BO-pSq">
-                                <rect key="frame" x="237" y="81" width="59" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="wO2-kQ-mNA">
-                                <rect key="frame" x="114" y="161" width="92" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="AzQ-oy-pTz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fire.png" id="AzQ-oy-pTz">
                                 <rect key="frame" x="116" y="457" width="88" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
@@ -301,21 +281,11 @@
                                     <action selector="Pause" destination="xnG-Dg-yTg" eventType="touchUpInside" id="nzw-ze-ZlB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Akv-Bf-Pbh">
-                                <rect key="frame" x="220" y="161" width="92" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Back" destination="qr3-Dy-eT1" id="g4S-dy-PRa"/>
-                        <outlet property="Color1" destination="Nnj-Ow-8ee" id="NfJ-iG-nFz"/>
-                        <outlet property="Color2" destination="aSW-c4-UdW" id="pp9-gz-Wia"/>
-                        <outlet property="Color3" destination="EP3-BO-pSq" id="sIh-RQ-jrJ"/>
-                        <outlet property="Option1" destination="xOJ-Zi-7G1" id="gIo-Uu-yX5"/>
-                        <outlet property="Option2" destination="wO2-kQ-mNA" id="fci-zk-vw1"/>
-                        <outlet property="Option3" destination="Akv-Bf-Pbh" id="trp-mT-ChC"/>
                         <outlet property="Pause" destination="hHU-a5-box" id="qLB-S5-1nY"/>
                         <outlet property="Resume" destination="n1R-f9-daT" id="qqa-nb-fnB"/>
                         <outlet property="ScoreLabel" destination="qWj-pf-xVL" id="bSS-Se-eL3"/>
@@ -349,14 +319,6 @@
                                 <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tFz-kR-7J5">
-                                <rect key="frame" x="40" y="165" width="91" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play.png"/>
-                                <connections>
-                                    <segue destination="kJA-1P-B5K" kind="modal" id="vP9-Nc-8TI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UP7-BU-bwG">
                                 <rect key="frame" x="40" y="461" width="241" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -387,6 +349,14 @@
                                 <state key="normal" title="Basketball"/>
                                 <connections>
                                     <segue destination="xnG-Dg-yTg" kind="modal" id="Fyr-f7-JSk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tFz-kR-7J5">
+                                <rect key="frame" x="40" y="164" width="117" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play.png"/>
+                                <connections>
+                                    <segue destination="kJA-1P-B5K" kind="modal" id="vP9-Nc-8TI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -492,10 +462,10 @@
         <image name="arrowleft.png" width="200" height="100"/>
         <image name="arrowright.png" width="200" height="100"/>
         <image name="arrowup.png" width="100" height="200"/>
-        <image name="fire.png" width="153" height="142"/>
+        <image name="fire.png" width="100" height="100"/>
         <image name="how.png" width="750" height="351"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ds7-d9-Wzw"/>
+        <segue reference="Tyn-2L-fhM"/>
     </inferredMetricsTieBreakers>
 </document>

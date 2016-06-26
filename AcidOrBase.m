@@ -6,13 +6,13 @@
 //  Copyright © 2016 MuSquared. All rights reserved.
 //
 
-#import "RightColorChange.h"
+#import "AcidOrBase.h"
 
-@interface RightColorChange ()
+@interface AcidOrBase ()
 
 @end
 
-@implementation RightColorChange
+@implementation AcidOrBase
 
 -(IBAction)Back:(id)sender{
     
@@ -41,9 +41,20 @@
     Pause.hidden = NO;
     Spawn.hidden = NO;
 }
+/*-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    CGPoint location = [touch locationInView:touch.view];
+    Spawn.center = location;
+}
 
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self touchesBegan:touches withEvent:event];
+}*/
 - (void)viewDidLoad {
-    
+    //Guess the right color or if its and acid or base
+    //either tell if its an acid or base and predict color based on the indicator
+    //or tell what color it will turn if its an acid or base
+    //different indicators are used
     Resume.hidden = YES;
     Back.hidden = YES;
     
