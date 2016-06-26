@@ -339,7 +339,12 @@
         
         //Timer
         CountdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
+        ColorGuideTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(HideColorGuide) userInfo:nil repeats:NO];
     }
+}
+-(void)HideColorGuide{
+    ColorGuide.hidden = YES;
+    
 }
 -(void)ArrowHelperMethod{
     //Green
@@ -722,6 +727,8 @@
     DownArrow.hidden = YES;
     LeftArrow.hidden = YES;
     RightArrow.hidden = YES;
+    
+    ColorGuide.hidden = NO;
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

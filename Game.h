@@ -56,6 +56,8 @@ BOOL OrangeRight;
 
 @interface Game : UIViewController <GKLeaderboardViewControllerDelegate>
 {
+    IBOutlet UIImageView *ColorGuide;
+    
     //Arrows
     IBOutlet UIImageView *LeftArrow;
     IBOutlet UIImageView *RightArrow;
@@ -97,6 +99,7 @@ BOOL OrangeRight;
     NSTimer *SpawnInBox;
     NSTimer *BadBoolTimer;
     NSTimer *ArrowHelper;
+    NSTimer *ColorGuideTimer;
 }
 
 
