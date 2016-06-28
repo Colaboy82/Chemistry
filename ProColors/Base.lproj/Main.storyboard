@@ -368,9 +368,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2mE-iT-i1C">
-                                <rect key="frame" x="190" y="164" width="91" height="87"/>
+                                <rect key="frame" x="185" y="164" width="102" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Basketball"/>
+                                <state key="normal" title="Acid or Base"/>
                                 <connections>
                                     <segue destination="xnG-Dg-yTg" kind="modal" id="Fyr-f7-JSk"/>
                                 </connections>
