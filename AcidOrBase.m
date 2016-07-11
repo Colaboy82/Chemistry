@@ -41,15 +41,28 @@
     Pause.hidden = NO;
     Spawn.hidden = NO;
 }
-/*-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [[event allTouches] anyObject];
-    CGPoint location = [touch locationInView:touch.view];
-    Spawn.center = location;
+-(void)EndGameTimer{
+    GameTimerInt = GameTimerInt - 1;
+    NSString *GameTimerString = [NSString stringWithFormat:@"%i",GameTimerInt];
+    Timer.text = GameTimerString;
+    if(GameTimerInt == 0){
+        [GameTimer invalidate];
+    }
 }
 
--(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self touchesBegan:touches withEvent:event];
-}*/
+-(void)Countdown{
+    CountdownInt = CountdownInt - 1;
+    NSString *CountdownString = [NSString stringWithFormat:@"%i",CountdownInt];
+    CountdownLabel.text = CountdownString;
+    if(CountdownInt == 0){
+        [CountDownStart invalidate];
+        Spawn.hidden = NO;
+        CountdownLabel.hidden = YES;
+        Pause.hidden = NO;
+    }
+    GameTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(EndGameTimer) userInfo:nil repeats:YES];
+}
+
 - (void)viewDidLoad {
     //Guess the right color or if its and acid or base
     //either tell if its an acid or base and predict color based on the indicator
@@ -60,8 +73,18 @@
     
     Acid.hidden = YES;
     Base.hidden = YES;
-    Blue.hidden = YES;
-    Red.hidden = YES;
+    
+    Meth.hidden = YES;
+    Phen.hidden = YES;
+    Litmus.hidden = YES;
+    Thymol.hidden = YES;
+    BromGreen.hidden = YES;
+    BromBlu.hidden = YES;
+    
+    CountdownInt = 3;
+    GameTimerInt = 30;
+    
+    CountDownStart = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

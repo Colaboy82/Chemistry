@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+int Score;
+int CountdownInt;
+int GameTimerInt;
+
 @interface AcidOrBase : UIViewController
 {
-
     
     //GamePiece
     IBOutlet UIImageView *Spawn;
@@ -19,6 +22,7 @@
     IBOutlet UILabel *ScoreLabel;
     IBOutlet UILabel *ScoreNumberLabel;
     IBOutlet UILabel *Timer;
+    IBOutlet UILabel *CountdownLabel;
     
     //Buttons
     IBOutlet UIButton *Pause;
@@ -28,9 +32,18 @@
     //GameButtons
     IBOutlet UIButton *Acid;
     IBOutlet UIButton *Base;
-    IBOutlet UIButton *Blue;
-    IBOutlet UIButton *Red;
     
+    //Acid Base Indicators
+    IBOutlet UILabel *Meth;//Methyl Orange
+    IBOutlet UILabel *Phen;//Phenolphtalein
+    IBOutlet UILabel *Litmus;//Litmus
+    IBOutlet UILabel *Thymol;//Thymol Blue
+    IBOutlet UILabel *BromGreen;//Bromcresol Green
+    IBOutlet UILabel *BromBlu;//Bromothymol Blue
 
+    //Timers
+    NSTimer *CountDownStart;
+    NSTimer *GameTimer; 
+    
 }
 @end
