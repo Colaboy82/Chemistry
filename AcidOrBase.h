@@ -18,11 +18,19 @@
     //Labels
     IBOutlet UILabel *ScoreLabel;
     IBOutlet UILabel *ScoreNumberLabel;
+    IBOutlet UILabel *Timer;
     
     //Buttons
     IBOutlet UIButton *Pause;
     IBOutlet UIButton *Resume;
     IBOutlet UIButton *Back;
+    
+    //GameButtons
+    IBOutlet UIButton *Acid;
+    IBOutlet UIButton *Base;
+    IBOutlet UIButton *Blue;
+    IBOutlet UIButton *Red;
+    
 
 }
 @end

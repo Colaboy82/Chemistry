@@ -58,6 +58,11 @@
     Resume.hidden = YES;
     Back.hidden = YES;
     
+    Acid.hidden = YES;
+    Base.hidden = YES;
+    Blue.hidden = YES;
+    Red.hidden = YES;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
