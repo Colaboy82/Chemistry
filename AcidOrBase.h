@@ -43,7 +43,8 @@ int GameTimerInt;
 
     //Timers
     NSTimer *CountDownStart;
-    NSTimer *GameTimer; 
+    NSTimer *GameTimer;
+    NSTimer *FlaskRandomnizer;//switches the flask colors
     
 }
 @end
