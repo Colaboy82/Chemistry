@@ -24,6 +24,8 @@
 		3D91F79A1D2024CE0047ACC2 /* arrowright.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D91F7961D2024CE0047ACC2 /* arrowright.png */; };
 		3D91F79B1D2024CE0047ACC2 /* arrowup.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D91F7971D2024CE0047ACC2 /* arrowup.png */; };
 		3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC41B01CFA7E0B00A47210 /* GameKit.framework */; };
+		3DA74BE21D388927002803BD /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA74BE01D388927002803BD /* check.png */; };
+		3DA74BE31D388927002803BD /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA74BE11D388927002803BD /* x.png */; };
 		3DB1DD281CFB64620018B5B3 /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */; };
 		3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD291CFB65860018B5B3 /* Foundation.framework */; };
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
@@ -93,6 +95,8 @@
 		3D91F7951D2024CE0047ACC2 /* arrowleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowleft.png; sourceTree = "<group>"; };
 		3D91F7961D2024CE0047ACC2 /* arrowright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowright.png; sourceTree = "<group>"; };
 		3D91F7971D2024CE0047ACC2 /* arrowup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowup.png; sourceTree = "<group>"; };
+		3DA74BE01D388927002803BD /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		3DA74BE11D388927002803BD /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		3DB1DD261CFB64620018B5B3 /* GameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterViewController.h; path = ../GameCenterViewController.h; sourceTree = "<group>"; };
 		3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenterViewController.m; path = ../GameCenterViewController.m; sourceTree = "<group>"; };
 		3DB1DD291CFB65860018B5B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -202,6 +206,8 @@
 				3D1A62C81D35A2C000731DB1 /* yellow.png */,
 				3D1A62CA1D35A2DB00731DB1 /* blue.png */,
 				3D1A62CC1D35B80A00731DB1 /* pink.png */,
+				3DA74BE01D388927002803BD /* check.png */,
+				3DA74BE11D388927002803BD /* x.png */,
 			);
 			name = AcidOrBaseAssets;
 			sourceTree = "<group>";
@@ -427,10 +433,12 @@
 				3D91F78C1D1EBC640047ACC2 /* Game.png in Resources */,
 				EC44429F1D1F10F600F5565D /* Cu-ionized.png in Resources */,
 				3D91F78D1D1EBC640047ACC2 /* how.png in Resources */,
+				3DA74BE31D388927002803BD /* x.png in Resources */,
 				3D1A62CB1D35A2DB00731DB1 /* blue.png in Resources */,
 				EC4442A21D1F10F600F5565D /* Li-ionized.png in Resources */,
 				3D1A62CD1D35B80A00731DB1 /* pink.png in Resources */,
 				EC4442A71D1F10F600F5565D /* Red brick.png in Resources */,
+				3DA74BE21D388927002803BD /* check.png in Resources */,
 				EC4442A81D1F10F600F5565D /* St-ionized.png in Resources */,
 				EC4442A41D1F10F600F5565D /* Na-ionized.png in Resources */,
 				3DEE07871D20266F0018B759 /* Ba-norm.png in Resources */,
