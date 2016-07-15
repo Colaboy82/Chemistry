@@ -118,7 +118,8 @@
 -(void)FlaskChooser{
     Acid.hidden = NO;
     Base.hidden = NO;
-    
+    X.hidden = YES;
+    CheckMark.hidden = YES;
     int randomObject = rand() % 12;
     if(correctSelect == YES){
         switch (randomObject) {
