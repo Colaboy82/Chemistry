@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 
-int Score;
+int ScoreNumber;
 int CountdownInt;
 int GameTimerInt;
+
+BOOL correctSelect;
+BOOL acidBool;
 
 @interface AcidOrBase : UIViewController
 {
@@ -41,10 +45,15 @@ int GameTimerInt;
     IBOutlet UILabel *BromGreen;//Bromcresol Green
     IBOutlet UILabel *BromBlu;//Bromothymol Blue
 
+    //Check and X
+    IBOutlet UIImageView *CheckMark;
+    IBOutlet UIImageView *X;
+    
     //Timers
     NSTimer *CountDownStart;
     NSTimer *GameTimer;
     NSTimer *FlaskRandomnizer;//switches the flask colors
+    NSTimer *IndicatorRandomizer;//switches the acid/base indicator
     
 }
 @end
