@@ -112,7 +112,6 @@
         Base.hidden = NO;
         
         GameTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(EndGameTimer) userInfo:nil repeats:YES];
-
     }
 }
 -(void)FlaskChooser{
@@ -159,10 +158,10 @@
                 BromGreen.hidden = YES;
                 BromBlu.hidden = YES;
                 break;
-            case 3://acid
+            case 3://base
                 Spawn.image = [UIImage imageNamed:@"blue.png"];
                 
-                acidBool = YES;
+                acidBool = NO;
 
                 Meth.hidden = YES;
                 Phen.hidden = YES;
@@ -183,10 +182,10 @@
                 BromGreen.hidden = YES;
                 BromBlu.hidden = YES;
                 break;
-            case 5://base
+            case 5://acid
                 Spawn.image = [UIImage imageNamed:@"red.png"];
                 
-                acidBool =  NO;
+                acidBool =  YES;
 
                 Meth.hidden = YES;
                 Phen.hidden = YES;
