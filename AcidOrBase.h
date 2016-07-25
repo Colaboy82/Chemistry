@@ -12,6 +12,7 @@
 int ScoreNumber;
 int CountdownInt;
 int GameTimerInt;
+int HighScore;
 
 BOOL correctSelect;
 BOOL acidBool;
@@ -54,6 +55,9 @@ BOOL acidBool;
     NSTimer *GameTimer;
     NSTimer *FlaskRandomnizer;//switches the flask colors
     NSTimer *IndicatorRandomizer;//switches the acid/base indicator
+    NSTimer *SwitchToLoseBase;
+    NSTimer *SwitchToLoseAcid;
+    NSTimer *SwitchToWin;
     
 }
 @end

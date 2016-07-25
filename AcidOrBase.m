@@ -16,11 +16,13 @@
 
 -(IBAction)Back:(id)sender{
     
+    [GameTimer invalidate];
+    [FlaskRandomnizer invalidate];
+    [CountDownStart invalidate];
 }
 -(void)pauseLayer:(CALayer *)layer{
     Spawn.userInteractionEnabled = NO;
 }
-
 -(void)resumeLayer:(CALayer *)layer{
     Spawn.userInteractionEnabled = YES;
 }
@@ -54,7 +56,7 @@
         FlaskRandomnizer = [NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(FlaskChooser) userInfo:nil repeats:NO];
     }
     if(acidBool == NO){
-        //[self EndGame];
+        [self LoseBase];
         correctSelect = NO;
         X.hidden = NO;
         CheckMark.hidden = YES;
@@ -75,7 +77,7 @@
         FlaskRandomnizer = [NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(FlaskChooser) userInfo:nil repeats:NO];
     }
     if(acidBool == YES){
-        //[self EndGame];
+        [self LoseAcid];
         correctSelect = NO;
         X.hidden = NO;
         CheckMark.hidden = YES;
@@ -83,21 +85,75 @@
 }
 -(void)EndGameTimer{
     GameTimerInt = GameTimerInt - 1;
-    NSString *GameTimerString = [NSString stringWithFormat:@"%i",GameTimerInt];
+    NSString *GameTimerString = [NSString stringWithFormat:@"Time: %i",GameTimerInt];
     Timer.text = GameTimerString;
     if(GameTimerInt == 0){
         [GameTimer invalidate];
         [self EndGame];
     }
 }
+-(void)LoseAcid{
+    Acid.hidden = YES;
+    Base.hidden = YES;
+    
+    [GameTimer invalidate];
+    [FlaskRandomnizer invalidate];
+    [CountDownStart invalidate];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorScoreSaved"];
+    
+    if(ScoreNumber > HighScore){
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+    }
+    SwitchToLoseAcid = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToLoseAcidScreen) userInfo:nil repeats:NO];
+}
+-(void)LoseBase{
+    Acid.hidden = YES;
+    Base.hidden = YES;
+    
+    [GameTimer invalidate];
+    [FlaskRandomnizer invalidate];
+    [CountDownStart invalidate];
+    
+    [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorScoreSaved"];
+    
+    if(ScoreNumber > HighScore){
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+    }
+    SwitchToLoseBase = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToLoseBaseScreen) userInfo:nil repeats:NO];
+}
 -(void)EndGame{
     Acid.hidden = YES;
     Base.hidden = YES;
     
     [GameTimer invalidate];
-
+    [FlaskRandomnizer invalidate];
+    [CountDownStart invalidate];
     
-    [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+    [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorScoreSaved"];
+    
+    if(ScoreNumber > HighScore){
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+    }
+    SwitchToWin = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToWinScreen) userInfo:nil repeats:NO];
+}
+-(void)SwitchToLoseAcidScreen{
+    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"LoseAcid"];
+    [self presentViewController:vcW animated:YES completion:nil];
+}
+-(void)SwitchToLoseBaseScreen{
+    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"LoseBase"];
+    [self presentViewController:vcW animated:YES completion:nil];
+}
+-(void)SwitchToWinScreen{
+    UIViewController *vcW = [self.storyboard instantiateViewControllerWithIdentifier:@"WinAcidBase"];
+    [self presentViewController:vcW animated:YES completion:nil];
 }
 -(void)Countdown{
     CountdownInt = CountdownInt - 1;

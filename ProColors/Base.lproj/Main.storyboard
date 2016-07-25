@@ -72,12 +72,12 @@
                                 <color key="backgroundColor" red="1" green="0.31123499789999998" blue="0.018682243970000002" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qPj-Fe-4v5">
-                                <rect key="frame" x="112" y="181" width="97" height="30"/>
+                                <rect key="frame" x="90" y="181" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back To Menu"/>
+                                <state key="normal" title="Back To Game Menu"/>
                                 <connections>
                                     <action selector="Back:" destination="kJA-1P-B5K" eventType="touchUpInside" id="y06-A4-9BC"/>
-                                    <segue destination="Ux5-1o-MYh" kind="modal" id="FsG-jI-4HK"/>
+                                    <segue destination="orM-Bm-B8c" kind="modal" id="NMq-jk-vr8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VWA-ts-3Rs">
@@ -149,7 +149,6 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
-                        <outlet property="Back" destination="qPj-Fe-4v5" id="06X-A1-RJa"/>
                         <outlet property="BottomBox" destination="mXo-vb-Fhe" id="b5b-Bv-cJQ"/>
                         <outlet property="CountdownLabel" destination="BTn-jw-cyq" id="7BK-1e-OGS"/>
                         <outlet property="DownArrow" destination="KIM-u9-d7F" id="tKw-CK-DCs"/>
@@ -169,39 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nX-ps-9fU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="129"/>
-        </scene>
-        <!--Game Center View Controller-->
-        <scene sceneID="5a3-gX-gt8">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" id="clk-nu-4r2" customClass="GameCenterViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tON-n2-88Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nbU-tO-ZYL">
-                                <rect key="frame" x="123" y="125" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Leaderboard"/>
-                                <connections>
-                                    <action selector="showLeaderBoard:" destination="clk-nu-4r2" eventType="touchUpInside" id="40K-O7-NC2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VUu-8s-DHx">
-                                <rect key="frame" x="138" y="305" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="Ux5-1o-MYh" kind="modal" id="Ds7-d9-Wzw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ise-VM-7KD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="314" y="903"/>
+            <point key="canvasLocation" x="1191" y="120"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HN4-Iz-9Ui">
@@ -227,6 +194,47 @@
             </objects>
             <point key="canvasLocation" x="746" y="892"/>
         </scene>
+        <!--Lose Acid View Controller-->
+        <scene sceneID="iaN-po-IQp">
+            <objects>
+                <viewController storyboardIdentifier="LoseAcid" modalTransitionStyle="crossDissolve" id="E26-tU-bNw" customClass="LoseAcidViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EMm-B6-Bez">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It was an acid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8fN-y6-dN1">
+                                <rect key="frame" x="115" y="78" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzv-3T-99k">
+                                <rect key="frame" x="0.0" y="235" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pfo-6Z-JSS">
+                                <rect key="frame" x="87" y="402" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back to Main Menu"/>
+                                <connections>
+                                    <segue destination="Ux5-1o-MYh" kind="modal" id="6F9-e9-9o3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScoreLabel" destination="mzv-3T-99k" id="nY0-Oo-Ckw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAG-hG-OBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-748" y="135"/>
+        </scene>
         <!--Acid Or Base-->
         <scene sceneID="IZm-Od-cOx">
             <objects>
@@ -249,16 +257,6 @@
                                 <color key="textColor" red="1" green="0.099753318430000001" blue="0.25082032209999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qr3-Dy-eT1">
-                                <rect key="frame" x="5" y="374" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back To Menu"/>
-                                <connections>
-                                    <action selector="Back:" destination="kJA-1P-B5K" eventType="touchUpInside" id="KoM-Df-fYH"/>
-                                    <action selector="Back:" destination="xnG-Dg-yTg" eventType="touchUpInside" id="jHl-Hg-8q2"/>
-                                    <segue destination="Ux5-1o-MYh" kind="modal" id="Tyn-2L-fhM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n1R-f9-daT">
                                 <rect key="frame" x="26" y="309" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -363,6 +361,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.99074691400000003" green="0.99029424479999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qr3-Dy-eT1">
+                                <rect key="frame" x="13" y="374" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back To Game Menu"/>
+                                <connections>
+                                    <action selector="Back:" destination="kJA-1P-B5K" eventType="touchUpInside" id="KoM-Df-fYH"/>
+                                    <action selector="Back:" destination="xnG-Dg-yTg" eventType="touchUpInside" id="jHl-Hg-8q2"/>
+                                    <segue destination="orM-Bm-B8c" kind="modal" id="OYA-A2-USa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -406,19 +414,12 @@
                                 <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lJm-Wy-zvh">
-                                <rect key="frame" x="0.0" y="115" width="320" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UP7-BU-bwG">
                                 <rect key="frame" x="40" y="461" width="241" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="Game.png"/>
                                 <connections>
-                                    <segue destination="clk-nu-4r2" kind="modal" id="g33-El-GnH"/>
+                                    <action selector="showLeaderBoard:" destination="Ux5-1o-MYh" eventType="touchUpInside" id="Pbh-vU-jaB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rYE-2S-HTv">
@@ -430,40 +431,94 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bsn-gh-Lws">
-                                <rect key="frame" x="40" y="259" width="241" height="94"/>
+                                <rect key="frame" x="40" y="261" width="241" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="how.png"/>
                                 <connections>
                                     <segue destination="uCn-gq-xkS" kind="modal" id="uSe-lB-sKX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2mE-iT-i1C">
-                                <rect key="frame" x="185" y="164" width="102" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Acid or Base"/>
-                                <connections>
-                                    <segue destination="xnG-Dg-yTg" kind="modal" id="Fyr-f7-JSk"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tFz-kR-7J5">
-                                <rect key="frame" x="40" y="164" width="117" height="87"/>
+                                <rect key="frame" x="40" y="164" width="241" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play.png"/>
                                 <connections>
-                                    <segue destination="kJA-1P-B5K" kind="modal" id="vP9-Nc-8TI"/>
+                                    <segue destination="orM-Bm-B8c" kind="modal" id="ffV-BV-2h4"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <connections>
-                        <outlet property="HighScoreLabel" destination="lJm-Wy-zvh" id="ztS-1L-mxN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbc-Sj-9sK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="192" y="127"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qrq-Ub-9LP">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="orM-Bm-B8c" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F80-8D-mQc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1Dc-bG-RDz">
+                                <rect key="frame" x="43" y="252" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Color Swipe"/>
+                                <connections>
+                                    <segue destination="kJA-1P-B5K" kind="modal" id="RKn-sn-zcf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hY4-DN-YXv">
+                                <rect key="frame" x="183" y="252" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Acid or Base"/>
+                                <connections>
+                                    <segue destination="xnG-Dg-yTg" kind="modal" id="LA3-eh-Lzc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wUt-xh-rkn">
+                                <rect key="frame" x="94" y="464" width="134" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back To Main Menu"/>
+                                <connections>
+                                    <segue destination="Ux5-1o-MYh" kind="modal" id="IOr-wB-CM4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bDJ-a3-spa">
+                                <rect key="frame" x="114" y="58" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c9J-c5-1PY">
+                                <rect key="frame" x="14" y="285" width="141" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="doV-Yt-dAs">
+                                <rect key="frame" x="172" y="285" width="141" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.02017410432" blue="0.067212780710000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="HighScoreLabel" destination="c9J-c5-1PY" id="WN0-fa-TgQ"/>
+                        <outlet property="IndicatorHighScoreLabel" destination="doV-Yt-dAs" id="vEu-sM-qFu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGW-zy-YPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666" y="133"/>
         </scene>
         <!--Lose View Controller-->
         <scene sceneID="fCb-C8-Qp2">
@@ -505,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVM-tT-6bJ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="127"/>
+            <point key="canvasLocation" x="1599" y="127"/>
         </scene>
         <!--Win View Controller-->
         <scene sceneID="2BK-Xe-bIg">
@@ -515,13 +570,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time's Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xsL-SK-Son">
-                                <rect key="frame" x="0.0" y="119" width="320" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D93-kM-NhO">
                                 <rect key="frame" x="0.0" y="170" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -537,6 +585,13 @@
                                     <segue destination="Ux5-1o-MYh" kind="modal" id="Y6g-Zh-dRx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time's Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xsL-SK-Son">
+                                <rect key="frame" x="0.0" y="119" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -546,7 +601,89 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZG-qS-sIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1310" y="127"/>
+            <point key="canvasLocation" x="2058" y="129"/>
+        </scene>
+        <!--Lose Base View Controller-->
+        <scene sceneID="PlJ-6z-D4D">
+            <objects>
+                <viewController storyboardIdentifier="LoseBase" modalTransitionStyle="crossDissolve" id="Jcb-Qq-wGN" customClass="LoseBaseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y4T-bI-zGj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It was a Base" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u5I-dT-BdB">
+                                <rect key="frame" x="110" y="73" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jxc-PN-oxu">
+                                <rect key="frame" x="0.0" y="157" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ugk-GX-d87">
+                                <rect key="frame" x="130" y="324" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back to Main Menu"/>
+                                <connections>
+                                    <segue destination="Ux5-1o-MYh" kind="modal" id="Jhj-w9-UYZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScoreLabel" destination="jxc-PN-oxu" id="HWn-NH-rAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdC-9m-Vke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1120" y="135"/>
+        </scene>
+        <!--Win Acid Base View Controller-->
+        <scene sceneID="gMH-sN-6DD">
+            <objects>
+                <viewController storyboardIdentifier="WinAcidBase" modalTransitionStyle="crossDissolve" id="mXX-p7-PpH" customClass="WinAcidBaseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uhm-E3-59i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time's Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EvF-fe-iHd">
+                                <rect key="frame" x="0.0" y="91" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4iQ-Q6-rhH">
+                                <rect key="frame" x="0.0" y="178" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rHL-oP-sbj">
+                                <rect key="frame" x="82" y="345" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back to Main Menu"/>
+                                <connections>
+                                    <segue destination="Ux5-1o-MYh" kind="modal" id="lCi-u1-fbD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ScoreLabel" destination="4iQ-Q6-rhH" id="TPq-1X-kjG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqD-iA-15T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1474" y="129"/>
         </scene>
     </scenes>
     <resources>
@@ -562,6 +699,7 @@
         <image name="x.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tyn-2L-fhM"/>
+        <segue reference="IOr-wB-CM4"/>
+        <segue reference="ffV-BV-2h4"/>
     </inferredMetricsTieBreakers>
 </document>

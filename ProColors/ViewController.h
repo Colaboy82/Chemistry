@@ -10,10 +10,12 @@
 #import <GameKit/GameKit.h>
 
 int HighScoreNumber;
+int IndicatorHighScoreNumber;
 
 @interface ViewController : UIViewController <GKLeaderboardViewControllerDelegate>
 {
     IBOutlet UILabel *HighScoreLabel;
+    IBOutlet UILabel *IndicatorHighScoreLabel;
 }
 
 @end
