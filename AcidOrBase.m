@@ -32,6 +32,8 @@
     Back.hidden = NO;
     Pause.hidden = YES;
     Spawn.hidden = YES;
+    
+    [GameTimer invalidate];
 }
 
 -(IBAction)Resume{
@@ -40,6 +42,8 @@
     Back.hidden = YES;
     Pause.hidden = NO;
     Spawn.hidden = NO;
+    
+    GameTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(EndGameTimer) userInfo:nil repeats:YES];
 }
 -(IBAction)AcidFunction:(id)sender{
     if(acidBool == YES){
