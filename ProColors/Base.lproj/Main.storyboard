@@ -87,7 +87,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HowtoColorSwipe.png" id="Q5n-Xr-Ze0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DSc-hu-1sF">
                                 <rect key="frame" x="0.0" y="483" width="104" height="85"/>
@@ -818,8 +818,8 @@
         <image name="x.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="54P-P7-kI0"/>
         <segue reference="gpn-xC-XTG"/>
         <segue reference="paN-Sh-Bch"/>
+        <segue reference="54P-P7-kI0"/>
     </inferredMetricsTieBreakers>
 </document>
