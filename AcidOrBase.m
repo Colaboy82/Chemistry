@@ -159,6 +159,8 @@
     CountdownInt = CountdownInt - 1;
     NSString *CountdownString = [NSString stringWithFormat:@"%i",CountdownInt];
     CountdownLabel.text = CountdownString;
+    Acid.hidden = YES;
+    Base.hidden = YES;
     if(CountdownInt == 0){
         [CountDownStart invalidate];
         Spawn.hidden = NO;
@@ -168,6 +170,8 @@
         Base.hidden = NO;
         
         GameTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(EndGameTimer) userInfo:nil repeats:YES];
+        Acid.hidden = NO;
+        Base.hidden = NO;
     }
 }
 -(void)FlaskChooser{
@@ -347,6 +351,8 @@
     
     CountdownInt = 3;
     GameTimerInt = 30;
+    
+    ScoreNumber = 0;
     
     CountDownStart = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
     FlaskRandomnizer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(FlaskChooser) userInfo:nil repeats:NO];
