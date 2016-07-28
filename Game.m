@@ -52,6 +52,8 @@
     DownArrow.hidden = YES;
     LeftArrow.hidden = YES;
     RightArrow.hidden = YES;
+    
+    
 }
 
 -(IBAction)Resume{
