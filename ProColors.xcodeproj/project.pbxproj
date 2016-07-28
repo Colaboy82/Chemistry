@@ -34,6 +34,7 @@
 		3D92C38A1D49A208003FA7D0 /* GameMen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D92C3881D49A208003FA7D0 /* GameMen.png */; };
 		3D92C38B1D49A208003FA7D0 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D92C3891D49A208003FA7D0 /* Main.png */; };
 		3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC41B01CFA7E0B00A47210 /* GameKit.framework */; };
+		3DA219811D4A505D00966000 /* HowtoColorSwipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA219801D4A505D00966000 /* HowtoColorSwipe.png */; };
 		3DB1DD281CFB64620018B5B3 /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */; };
 		3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD291CFB65860018B5B3 /* Foundation.framework */; };
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
@@ -120,6 +121,7 @@
 		3D92C3861D4981E8003FA7D0 /* back arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back arrow.png"; sourceTree = "<group>"; };
 		3D92C3881D49A208003FA7D0 /* GameMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameMen.png; sourceTree = "<group>"; };
 		3D92C3891D49A208003FA7D0 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		3DA219801D4A505D00966000 /* HowtoColorSwipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowtoColorSwipe.png; sourceTree = "<group>"; };
 		3DB1DD261CFB64620018B5B3 /* GameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterViewController.h; path = ../GameCenterViewController.h; sourceTree = "<group>"; };
 		3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenterViewController.m; path = ../GameCenterViewController.m; sourceTree = "<group>"; };
 		3DB1DD291CFB65860018B5B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -329,6 +331,7 @@
 			children = (
 				3D0B1C221D49A832000AAED8 /* Gimme Danger.ttf */,
 				3D5E22E81D49A6400028007D /* Howtoacidbase.png */,
+				3DA219801D4A505D00966000 /* HowtoColorSwipe.png */,
 				3D92C3881D49A208003FA7D0 /* GameMen.png */,
 				3D92C3891D49A208003FA7D0 /* Main.png */,
 				3DD3F8BD1D484AF900EC78A0 /* pause.png */,
@@ -512,6 +515,7 @@
 				3D92C37F1D4853B9003FA7D0 /* TimesUp.png in Resources */,
 				3DD3F8BC1D484AF200EC78A0 /* check.png in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
+				3DA219811D4A505D00966000 /* HowtoColorSwipe.png in Resources */,
 				3D91F79A1D2024CE0047ACC2 /* arrowright.png in Resources */,
 				3D1A62C51D35A2B300731DB1 /* clear.png in Resources */,
 				EC44429D1D1F10F600F5565D /* Ca-ionized.png in Resources */,

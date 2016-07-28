@@ -329,6 +329,162 @@
         }
     }
 }
+-(void)FirstFlaskChooser{
+    Acid.hidden = YES;
+    Base.hidden = YES;
+    X.hidden = YES;
+    CheckMark.hidden = YES;
+    int randomObject = rand() % 12;
+    if(correctSelect == YES){
+        switch (randomObject) {
+            case 0://acid
+                Spawn.image = [UIImage imageNamed:@"clear.png"];
+                
+                acidBool = YES;
+                
+                Meth.hidden = YES;
+                Phen.hidden = NO;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 1://acid
+                Spawn.image = [UIImage imageNamed:@"red.png"];
+                
+                acidBool = YES;
+                
+                Meth.hidden = NO;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 2://base
+                Spawn.image = [UIImage imageNamed:@"yellow.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = NO;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 3://base
+                Spawn.image = [UIImage imageNamed:@"blue.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = NO;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 4://base
+                Spawn.image = [UIImage imageNamed:@"pink.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = YES;
+                Phen.hidden = NO;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 5://acid
+                Spawn.image = [UIImage imageNamed:@"red.png"];
+                
+                acidBool =  YES;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = NO;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 6://base
+                Spawn.image = [UIImage imageNamed:@"blue.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = NO;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 7://acid
+                Spawn.image = [UIImage imageNamed:@"yellow.png"];
+                
+                acidBool = YES;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = NO;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = YES;
+                break;
+            case 8://base
+                Spawn.image = [UIImage imageNamed:@"blue.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = NO;
+                BromBlu.hidden = YES;
+                break;
+            case 9://acid
+                Spawn.image = [UIImage imageNamed:@"yellow.png"];
+                
+                acidBool = YES;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = NO;
+                BromBlu.hidden = YES;
+                break;
+            case 10://base
+                Spawn.image = [UIImage imageNamed:@"blue.png"];
+                
+                acidBool = NO;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = NO;
+                break;
+            case 11://acid
+                Spawn.image = [UIImage imageNamed:@"yellow.png"];
+                
+                acidBool = YES;
+                
+                Meth.hidden = YES;
+                Phen.hidden = YES;
+                Litmus.hidden = YES;
+                Thymol.hidden = YES;
+                BromGreen.hidden = YES;
+                BromBlu.hidden = NO;
+                break;
+        }
+    }
+}
+
 - (void)viewDidLoad {
     //Guess the right color or if its and acid or base
     //either tell if its an acid or base and predict color based on the indicator
@@ -355,7 +511,7 @@
     ScoreNumber = 0;
     
     CountDownStart = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Countdown) userInfo:nil repeats:YES];
-    FlaskRandomnizer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(FlaskChooser) userInfo:nil repeats:NO];
+    FlaskRandomnizer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(FirstFlaskChooser) userInfo:nil repeats:NO];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.
