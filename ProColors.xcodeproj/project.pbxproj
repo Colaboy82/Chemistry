@@ -37,8 +37,12 @@
 		3D92C3871D4981E8003FA7D0 /* back arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D92C3861D4981E8003FA7D0 /* back arrow.png */; };
 		3D92C38A1D49A208003FA7D0 /* GameMen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D92C3881D49A208003FA7D0 /* GameMen.png */; };
 		3D92C38B1D49A208003FA7D0 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D92C3891D49A208003FA7D0 /* Main.png */; };
+		3D9A96C51D4ADB680084E462 /* ColorSwipeExplained.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A96C31D4ADB680084E462 /* ColorSwipeExplained.png */; };
+		3D9A96C61D4ADB680084E462 /* Acid or base explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A96C41D4ADB680084E462 /* Acid or base explain.png */; };
 		3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDC41B01CFA7E0B00A47210 /* GameKit.framework */; };
 		3DA219811D4A505D00966000 /* HowtoColorSwipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA219801D4A505D00966000 /* HowtoColorSwipe.png */; };
+		3DA7FFAF1D4AE89200830659 /* howtoindicate.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7FFAD1D4AE89200830659 /* howtoindicate.png */; };
+		3DA7FFB01D4AE89200830659 /* indicateexplain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA7FFAE1D4AE89200830659 /* indicateexplain.png */; };
 		3DB1DD281CFB64620018B5B3 /* GameCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */; };
 		3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD291CFB65860018B5B3 /* Foundation.framework */; };
 		3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */; };
@@ -57,6 +61,7 @@
 		3DEE078B1D20266F0018B759 /* Li-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07841D20266F0018B759 /* Li-norm.png */; };
 		3DEE078C1D20266F0018B759 /* Na-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07851D20266F0018B759 /* Na-norm.png */; };
 		3DEE078D1D20266F0018B759 /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07861D20266F0018B759 /* St-norm.png */; };
+		3DF01A791D4AE7B4007F4471 /* indicatbutton-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */; };
 		EC44429A1D1F10F600F5565D /* Ba-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4442891D1F10F600F5565D /* Ba-ionized.png */; };
 		EC44429D1D1F10F600F5565D /* Ca-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC44428C1D1F10F600F5565D /* Ca-ionized.png */; };
 		EC44429F1D1F10F600F5565D /* Cu-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC44428E1D1F10F600F5565D /* Cu-ionized.png */; };
@@ -129,7 +134,11 @@
 		3D92C3861D4981E8003FA7D0 /* back arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back arrow.png"; sourceTree = "<group>"; };
 		3D92C3881D49A208003FA7D0 /* GameMen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GameMen.png; sourceTree = "<group>"; };
 		3D92C3891D49A208003FA7D0 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		3D9A96C31D4ADB680084E462 /* ColorSwipeExplained.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSwipeExplained.png; sourceTree = "<group>"; };
+		3D9A96C41D4ADB680084E462 /* Acid or base explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Acid or base explain.png"; sourceTree = "<group>"; };
 		3DA219801D4A505D00966000 /* HowtoColorSwipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HowtoColorSwipe.png; sourceTree = "<group>"; };
+		3DA7FFAD1D4AE89200830659 /* howtoindicate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = howtoindicate.png; sourceTree = "<group>"; };
+		3DA7FFAE1D4AE89200830659 /* indicateexplain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indicateexplain.png; sourceTree = "<group>"; };
 		3DB1DD261CFB64620018B5B3 /* GameCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterViewController.h; path = ../GameCenterViewController.h; sourceTree = "<group>"; };
 		3DB1DD271CFB64620018B5B3 /* GameCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCenterViewController.m; path = ../GameCenterViewController.m; sourceTree = "<group>"; };
 		3DB1DD291CFB65860018B5B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,6 +163,7 @@
 		3DEE07841D20266F0018B759 /* Li-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Li-norm.png"; sourceTree = "<group>"; };
 		3DEE07851D20266F0018B759 /* Na-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Na-norm.png"; sourceTree = "<group>"; };
 		3DEE07861D20266F0018B759 /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St-norm.png"; sourceTree = "<group>"; };
+		3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicatbutton-3.png"; sourceTree = "<group>"; };
 		EC4442891D1F10F600F5565D /* Ba-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ba-ionized.png"; path = "../../../Downloads/mitchellmu/Ba-ionized.png"; sourceTree = "<group>"; };
 		EC44428C1D1F10F600F5565D /* Ca-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-ionized.png"; path = "../../../Downloads/mitchellmu/Ca-ionized.png"; sourceTree = "<group>"; };
 		EC44428E1D1F10F600F5565D /* Cu-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-ionized.png"; path = "../../../Downloads/mitchellmu/Cu-ionized.png"; sourceTree = "<group>"; };
@@ -341,6 +351,9 @@
 		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */,
+				3D9A96C31D4ADB680084E462 /* ColorSwipeExplained.png */,
+				3D9A96C41D4ADB680084E462 /* Acid or base explain.png */,
 				3D0B1C221D49A832000AAED8 /* Gimme Danger.ttf */,
 				3D5E22E81D49A6400028007D /* Howtoacidbase.png */,
 				3DA219801D4A505D00966000 /* HowtoColorSwipe.png */,
@@ -352,6 +365,8 @@
 				3D92C3801D497FA3003FA7D0 /* ChemInfo.png */,
 				3D92C3821D498005003FA7D0 /* Game.png */,
 				3D92C3861D4981E8003FA7D0 /* back arrow.png */,
+				3DA7FFAD1D4AE89200830659 /* howtoindicate.png */,
+				3DA7FFAE1D4AE89200830659 /* indicateexplain.png */,
 				3D1A62C31D35A2A700731DB1 /* AcidOrBaseAssets */,
 				3D1A62C21D35A26700731DB1 /* ColorSwipeAssets */,
 				3D91F78A1D1EBC640047ACC2 /* how.png */,
@@ -502,6 +517,7 @@
 				EC44429A1D1F10F600F5565D /* Ba-ionized.png in Resources */,
 				3D92C3811D497FA3003FA7D0 /* ChemInfo.png in Resources */,
 				3D1A62C91D35A2C000731DB1 /* yellow.png in Resources */,
+				3DF01A791D4AE7B4007F4471 /* indicatbutton-3.png in Resources */,
 				EC44429F1D1F10F600F5565D /* Cu-ionized.png in Resources */,
 				3D91F78D1D1EBC640047ACC2 /* how.png in Resources */,
 				3D13D16E1D4852A700FAFBA2 /* Game Over Acid.png in Resources */,
@@ -513,6 +529,7 @@
 				3D1A62CD1D35B80A00731DB1 /* pink.png in Resources */,
 				EC4442A71D1F10F600F5565D /* Red brick.png in Resources */,
 				EC4442A81D1F10F600F5565D /* St-ionized.png in Resources */,
+				3DA7FFAF1D4AE89200830659 /* howtoindicate.png in Resources */,
 				EC4442A41D1F10F600F5565D /* Na-ionized.png in Resources */,
 				3DD3F8BE1D484AF900EC78A0 /* pause.png in Resources */,
 				3DD3F8BA1D4849F400EC78A0 /* Color Swipe button.png in Resources */,
@@ -526,11 +543,13 @@
 				3DEE078C1D20266F0018B759 /* Na-norm.png in Resources */,
 				3D92C38A1D49A208003FA7D0 /* GameMen.png in Resources */,
 				3D1743FE1D4A63FD0071AF67 /* GameOverAcidv2.png in Resources */,
+				3DA7FFB01D4AE89200830659 /* indicateexplain.png in Resources */,
 				3D92C3871D4981E8003FA7D0 /* back arrow.png in Resources */,
 				3D92C37F1D4853B9003FA7D0 /* TimesUp.png in Resources */,
 				3DD3F8BC1D484AF200EC78A0 /* check.png in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
 				3DA219811D4A505D00966000 /* HowtoColorSwipe.png in Resources */,
+				3D9A96C51D4ADB680084E462 /* ColorSwipeExplained.png in Resources */,
 				3D91F79A1D2024CE0047ACC2 /* arrowright.png in Resources */,
 				3D1A62C51D35A2B300731DB1 /* clear.png in Resources */,
 				EC44429D1D1F10F600F5565D /* Ca-ionized.png in Resources */,
@@ -538,6 +557,7 @@
 				3D1744011D4A974A0071AF67 /* base.png in Resources */,
 				3D92C3831D498005003FA7D0 /* Game.png in Resources */,
 				3D91F78E1D1EBC640047ACC2 /* Play.png in Resources */,
+				3D9A96C61D4ADB680084E462 /* Acid or base explain.png in Resources */,
 				EC4442A61D1F10F600F5565D /* Orange Brick.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
