@@ -109,7 +109,7 @@
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
-        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicate_It_High_Score"];
     }
     SwitchToLoseAcid = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToLoseAcidScreen) userInfo:nil repeats:NO];
 }
@@ -126,7 +126,7 @@
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
-        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicate_It_High_Score"];
     }
     SwitchToLoseBase = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToLoseBaseScreen) userInfo:nil repeats:NO];
 }
@@ -143,7 +143,7 @@
     if(ScoreNumber > HighScore){
         HighScore = ScoreNumber;
         [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"IndicatorHighScoreSaved"];
-        [self updateScore:ScoreNumber forLeaderboardID:@"Indicator_High_Score"];
+        [self updateScore:ScoreNumber forLeaderboardID:@"Indicate_It_High_Score"];
     }
     SwitchToWin = [NSTimer scheduledTimerWithTimeInterval:0.15 target:self selector:@selector(SwitchToWinScreen) userInfo:nil repeats:NO];
 }
