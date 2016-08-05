@@ -20,8 +20,8 @@ BOOL ScoreBool;
 
 BOOL PauseTouch;//checks to see if paused; if it is the gestures will not be recognized
 
-double vertical = 150;//63
-double horizontal = 80;//70
+double vertical = 150;
+double horizontal = 80;
 
 int start;
 int CountdownNumber;
