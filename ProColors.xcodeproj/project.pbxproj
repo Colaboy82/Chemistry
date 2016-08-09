@@ -55,6 +55,21 @@
 		3DD3F8BC1D484AF200EC78A0 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3F8BB1D484AF200EC78A0 /* check.png */; };
 		3DD3F8BE1D484AF900EC78A0 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3F8BD1D484AF900EC78A0 /* pause.png */; };
 		3DD3F8C01D484B0C00EC78A0 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DD3F8BF1D484B0C00EC78A0 /* x.png */; };
+		3DE399D91D590C68004F2B22 /* icon 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D21D590C68004F2B22 /* icon 57x57.png */; };
+		3DE399DA1D590C68004F2B22 /* icon 60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D31D590C68004F2B22 /* icon 60x60.png */; };
+		3DE399DB1D590C68004F2B22 /* icon40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D41D590C68004F2B22 /* icon40x40.png */; };
+		3DE399DC1D590C68004F2B22 /* icon50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D51D590C68004F2B22 /* icon50x50.png */; };
+		3DE399DD1D590C68004F2B22 /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D61D590C68004F2B22 /* icon72x72.png */; };
+		3DE399DE1D590C68004F2B22 /* icon76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D71D590C68004F2B22 /* icon76x76.png */; };
+		3DE399DF1D590C68004F2B22 /* icon 29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399D81D590C68004F2B22 /* icon 29x29.png */; };
+		3DE399E71D591B45004F2B22 /* 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E01D591B45004F2B22 /* 180x180.png */; };
+		3DE399E81D591B45004F2B22 /* 167x167.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E11D591B45004F2B22 /* 167x167.png */; };
+		3DE399E91D591B45004F2B22 /* 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E21D591B45004F2B22 /* 80x80.png */; };
+		3DE399EA1D591B45004F2B22 /* 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E31D591B45004F2B22 /* 87x87.png */; };
+		3DE399EB1D591B45004F2B22 /* 120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E41D591B45004F2B22 /* 120x120.png */; };
+		3DE399EC1D591B45004F2B22 /* 152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E51D591B45004F2B22 /* 152x152.png */; };
+		3DE399ED1D591B45004F2B22 /* 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399E61D591B45004F2B22 /* 58x58.png */; };
+		3DE399F51D592EAA004F2B22 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE399F41D592EAA004F2B22 /* Default-568h@2x.png */; };
 		3DEE07871D20266F0018B759 /* Ba-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07801D20266F0018B759 /* Ba-norm.png */; };
 		3DEE07881D20266F0018B759 /* Ca-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07811D20266F0018B759 /* Ca-norm.png */; };
 		3DEE07891D20266F0018B759 /* Cu-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07821D20266F0018B759 /* Cu-norm.png */; };
@@ -157,6 +172,21 @@
 		3DD3F8BD1D484AF900EC78A0 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		3DD3F8BF1D484B0C00EC78A0 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
 		3DDC41B01CFA7E0B00A47210 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		3DE399D21D590C68004F2B22 /* icon 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 57x57.png"; sourceTree = "<group>"; };
+		3DE399D31D590C68004F2B22 /* icon 60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 60x60.png"; sourceTree = "<group>"; };
+		3DE399D41D590C68004F2B22 /* icon40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40x40.png; sourceTree = "<group>"; };
+		3DE399D51D590C68004F2B22 /* icon50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon50x50.png; sourceTree = "<group>"; };
+		3DE399D61D590C68004F2B22 /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
+		3DE399D71D590C68004F2B22 /* icon76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon76x76.png; sourceTree = "<group>"; };
+		3DE399D81D590C68004F2B22 /* icon 29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 29x29.png"; sourceTree = "<group>"; };
+		3DE399E01D591B45004F2B22 /* 180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180.png; sourceTree = "<group>"; };
+		3DE399E11D591B45004F2B22 /* 167x167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 167x167.png; sourceTree = "<group>"; };
+		3DE399E21D591B45004F2B22 /* 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80.png; sourceTree = "<group>"; };
+		3DE399E31D591B45004F2B22 /* 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87.png; sourceTree = "<group>"; };
+		3DE399E41D591B45004F2B22 /* 120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120.png; sourceTree = "<group>"; };
+		3DE399E51D591B45004F2B22 /* 152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152x152.png; sourceTree = "<group>"; };
+		3DE399E61D591B45004F2B22 /* 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58x58.png; sourceTree = "<group>"; };
+		3DE399F41D592EAA004F2B22 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3DEE07801D20266F0018B759 /* Ba-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ba-norm.png"; sourceTree = "<group>"; };
 		3DEE07811D20266F0018B759 /* Ca-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ca-norm.png"; sourceTree = "<group>"; };
 		3DEE07821D20266F0018B759 /* Cu-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cu-norm.png"; sourceTree = "<group>"; };
@@ -302,9 +332,31 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		3DE399D11D590C16004F2B22 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3DE399E01D591B45004F2B22 /* 180x180.png */,
+				3DE399E11D591B45004F2B22 /* 167x167.png */,
+				3DE399E21D591B45004F2B22 /* 80x80.png */,
+				3DE399E31D591B45004F2B22 /* 87x87.png */,
+				3DE399E41D591B45004F2B22 /* 120x120.png */,
+				3DE399E51D591B45004F2B22 /* 152x152.png */,
+				3DE399E61D591B45004F2B22 /* 58x58.png */,
+				3DE399D21D590C68004F2B22 /* icon 57x57.png */,
+				3DE399D31D590C68004F2B22 /* icon 60x60.png */,
+				3DE399D41D590C68004F2B22 /* icon40x40.png */,
+				3DE399D51D590C68004F2B22 /* icon50x50.png */,
+				3DE399D61D590C68004F2B22 /* icon72x72.png */,
+				3DE399D71D590C68004F2B22 /* icon76x76.png */,
+				3DE399D81D590C68004F2B22 /* icon 29x29.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		EC6CF2EC1CC4143D002C31BD = {
 			isa = PBXGroup;
 			children = (
+				3DE399F41D592EAA004F2B22 /* Default-568h@2x.png */,
 				3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */,
 				3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */,
 				3DB1DD291CFB65860018B5B3 /* Foundation.framework */,
@@ -351,6 +403,7 @@
 		EC6CF2F81CC4143D002C31BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DE399D11D590C16004F2B22 /* Icons */,
 				3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */,
 				3D9A96C31D4ADB680084E462 /* ColorSwipeExplained.png */,
 				3D9A96C41D4ADB680084E462 /* Acid or base explain.png */,
@@ -504,6 +557,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0B1C231D49A91A000AAED8 /* Gimme Danger.ttf in Resources */,
+				3DE399DF1D590C68004F2B22 /* icon 29x29.png in Resources */,
+				3DE399DE1D590C68004F2B22 /* icon76x76.png in Resources */,
 				3D92C38B1D49A208003FA7D0 /* Main.png in Resources */,
 				3D13D16D1D4852A700FAFBA2 /* Game Over Base.png in Resources */,
 				3D1A62C71D35A2B900731DB1 /* red.png in Resources */,
@@ -511,15 +566,21 @@
 				EC6CF3081CC4143D002C31BD /* LaunchScreen.storyboard in Resources */,
 				EC4442AA1D1F10F600F5565D /* Yellow Brick.png in Resources */,
 				3D02A8CE1D205A60006616FA /* fire.png in Resources */,
+				3DE399F51D592EAA004F2B22 /* Default-568h@2x.png in Resources */,
 				3DEE078D1D20266F0018B759 /* St-norm.png in Resources */,
 				3D5E22E91D49A6400028007D /* Howtoacidbase.png in Resources */,
 				EC6CF3051CC4143D002C31BD /* Assets.xcassets in Resources */,
 				EC44429A1D1F10F600F5565D /* Ba-ionized.png in Resources */,
 				3D92C3811D497FA3003FA7D0 /* ChemInfo.png in Resources */,
+				3DE399EA1D591B45004F2B22 /* 87x87.png in Resources */,
+				3DE399EB1D591B45004F2B22 /* 120x120.png in Resources */,
 				3D1A62C91D35A2C000731DB1 /* yellow.png in Resources */,
 				3DF01A791D4AE7B4007F4471 /* indicatbutton-3.png in Resources */,
+				3DE399D91D590C68004F2B22 /* icon 57x57.png in Resources */,
+				3DE399DB1D590C68004F2B22 /* icon40x40.png in Resources */,
 				EC44429F1D1F10F600F5565D /* Cu-ionized.png in Resources */,
 				3D91F78D1D1EBC640047ACC2 /* how.png in Resources */,
+				3DE399DC1D590C68004F2B22 /* icon50x50.png in Resources */,
 				3D13D16E1D4852A700FAFBA2 /* Game Over Acid.png in Resources */,
 				3D1A62CB1D35A2DB00731DB1 /* blue.png in Resources */,
 				3DD3F8C01D484B0C00EC78A0 /* x.png in Resources */,
@@ -528,8 +589,10 @@
 				3D1744021D4A974A0071AF67 /* Acid.png in Resources */,
 				3D1A62CD1D35B80A00731DB1 /* pink.png in Resources */,
 				EC4442A71D1F10F600F5565D /* Red brick.png in Resources */,
+				3DE399ED1D591B45004F2B22 /* 58x58.png in Resources */,
 				EC4442A81D1F10F600F5565D /* St-ionized.png in Resources */,
 				3DA7FFAF1D4AE89200830659 /* howtoindicate.png in Resources */,
+				3DE399E81D591B45004F2B22 /* 167x167.png in Resources */,
 				EC4442A41D1F10F600F5565D /* Na-ionized.png in Resources */,
 				3DD3F8BE1D484AF900EC78A0 /* pause.png in Resources */,
 				3DD3F8BA1D4849F400EC78A0 /* Color Swipe button.png in Resources */,
@@ -538,6 +601,7 @@
 				3DEE07881D20266F0018B759 /* Ca-norm.png in Resources */,
 				EC4442A11D1F10F600F5565D /* Green Brick.png in Resources */,
 				3DEE078B1D20266F0018B759 /* Li-norm.png in Resources */,
+				3DE399E71D591B45004F2B22 /* 180x180.png in Resources */,
 				3DEE07891D20266F0018B759 /* Cu-norm.png in Resources */,
 				3D91F7981D2024CE0047ACC2 /* arrowdown.png in Resources */,
 				3DEE078C1D20266F0018B759 /* Na-norm.png in Resources */,
@@ -548,12 +612,16 @@
 				3D92C37F1D4853B9003FA7D0 /* TimesUp.png in Resources */,
 				3DD3F8BC1D484AF200EC78A0 /* check.png in Resources */,
 				EC6CF3031CC4143D002C31BD /* Main.storyboard in Resources */,
+				3DE399EC1D591B45004F2B22 /* 152x152.png in Resources */,
 				3DA219811D4A505D00966000 /* HowtoColorSwipe.png in Resources */,
 				3D9A96C51D4ADB680084E462 /* ColorSwipeExplained.png in Resources */,
+				3DE399DA1D590C68004F2B22 /* icon 60x60.png in Resources */,
 				3D91F79A1D2024CE0047ACC2 /* arrowright.png in Resources */,
 				3D1A62C51D35A2B300731DB1 /* clear.png in Resources */,
+				3DE399DD1D590C68004F2B22 /* icon72x72.png in Resources */,
 				EC44429D1D1F10F600F5565D /* Ca-ionized.png in Resources */,
 				3D91F79B1D2024CE0047ACC2 /* arrowup.png in Resources */,
+				3DE399E91D591B45004F2B22 /* 80x80.png in Resources */,
 				3D1744011D4A974A0071AF67 /* base.png in Resources */,
 				3D92C3831D498005003FA7D0 /* Game.png in Resources */,
 				3D91F78E1D1EBC640047ACC2 /* Play.png in Resources */,
@@ -649,6 +717,85 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3DE399CD1D54E2F2004F2B22 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		3DE399CE1D54E2F2004F2B22 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ProColors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		3DE399CF1D54E2F2004F2B22 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ProColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProColors.app/ProColors";
+			};
+			name = Distribution;
+		};
+		3DE399D01D54E2F2004F2B22 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProColorsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MuSquared.ProColorsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProColors;
+				USES_XCTRUNNER = YES;
+			};
+			name = Distribution;
+		};
 		EC6CF3201CC4143D002C31BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -666,7 +813,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -709,7 +857,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -734,7 +883,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProColors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -750,7 +899,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProColors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -818,6 +967,7 @@
 			buildConfigurations = (
 				EC6CF3201CC4143D002C31BD /* Debug */,
 				EC6CF3211CC4143D002C31BD /* Release */,
+				3DE399CD1D54E2F2004F2B22 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -827,6 +977,7 @@
 			buildConfigurations = (
 				EC6CF3231CC4143D002C31BD /* Debug */,
 				EC6CF3241CC4143D002C31BD /* Release */,
+				3DE399CE1D54E2F2004F2B22 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -836,6 +987,7 @@
 			buildConfigurations = (
 				EC6CF3261CC4143D002C31BD /* Debug */,
 				EC6CF3271CC4143D002C31BD /* Release */,
+				3DE399CF1D54E2F2004F2B22 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -845,6 +997,7 @@
 			buildConfigurations = (
 				EC6CF3291CC4143D002C31BD /* Debug */,
 				EC6CF32A1CC4143D002C31BD /* Release */,
+				3DE399D01D54E2F2004F2B22 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
