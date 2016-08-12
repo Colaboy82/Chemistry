@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <Chartboost/Chartboost.h>
 
-@interface AppDelegate ()
+
+
+@interface AppDelegate () <ChartboostDelegate>
 
 @end
 
@@ -17,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Initialize the Chartboost library
     return YES;
 }
 
@@ -36,6 +40,11 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [Chartboost startWithAppId:@"57acbef843150f288627b2bf"
+                  appSignature:@"b3e32d1aab44c750e00590b8d84f84fbe5bab28c"
+                      delegate:self];
+    [Chartboost showInterstitial: CBLocationHomeScreen];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

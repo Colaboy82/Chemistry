@@ -76,6 +76,14 @@
 		3DEE078B1D20266F0018B759 /* Li-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07841D20266F0018B759 /* Li-norm.png */; };
 		3DEE078C1D20266F0018B759 /* Na-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07851D20266F0018B759 /* Na-norm.png */; };
 		3DEE078D1D20266F0018B759 /* St-norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DEE07861D20266F0018B759 /* St-norm.png */; };
+		3DEE31FC1D5CF721001D730B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE31FB1D5CF721001D730B /* StoreKit.framework */; };
+		3DEE31FE1D5D1173001D730B /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE31FD1D5D1173001D730B /* Chartboost.framework */; };
+		3DEE32001D5D142B001D730B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE31FF1D5D142B001D730B /* QuartzCore.framework */; };
+		3DEE32021D5D1431001D730B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE32011D5D1431001D730B /* SystemConfiguration.framework */; };
+		3DEE32041D5D143B001D730B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE32031D5D143B001D730B /* AdSupport.framework */; };
+		3DEE32061D5D144B001D730B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE32051D5D144B001D730B /* CoreMedia.framework */; };
+		3DEE32081D5D1457001D730B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE32071D5D1457001D730B /* AVFoundation.framework */; };
+		3DEE320A1D5D145D001D730B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEE32091D5D145D001D730B /* CoreData.framework */; };
 		3DF01A791D4AE7B4007F4471 /* indicatbutton-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */; };
 		EC44429A1D1F10F600F5565D /* Ba-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4442891D1F10F600F5565D /* Ba-ionized.png */; };
 		EC44429D1D1F10F600F5565D /* Ca-ionized.png in Resources */ = {isa = PBXBuildFile; fileRef = EC44428C1D1F10F600F5565D /* Ca-ionized.png */; };
@@ -193,6 +201,14 @@
 		3DEE07841D20266F0018B759 /* Li-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Li-norm.png"; sourceTree = "<group>"; };
 		3DEE07851D20266F0018B759 /* Na-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Na-norm.png"; sourceTree = "<group>"; };
 		3DEE07861D20266F0018B759 /* St-norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St-norm.png"; sourceTree = "<group>"; };
+		3DEE31FB1D5CF721001D730B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3DEE31FD1D5D1173001D730B /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chartboost.framework; path = "../../Downloads/Chartboost-iOS-6.4.7-Xcode6 2/Chartboost.framework"; sourceTree = "<group>"; };
+		3DEE31FF1D5D142B001D730B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3DEE32011D5D1431001D730B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3DEE32031D5D143B001D730B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3DEE32051D5D144B001D730B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3DEE32071D5D1457001D730B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3DEE32091D5D145D001D730B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3DF01A781D4AE7B4007F4471 /* indicatbutton-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indicatbutton-3.png"; sourceTree = "<group>"; };
 		EC4442891D1F10F600F5565D /* Ba-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ba-ionized.png"; path = "../../../Downloads/mitchellmu/Ba-ionized.png"; sourceTree = "<group>"; };
 		EC44428C1D1F10F600F5565D /* Ca-ionized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ca-ionized.png"; path = "../../../Downloads/mitchellmu/Ca-ionized.png"; sourceTree = "<group>"; };
@@ -229,9 +245,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEE320A1D5D145D001D730B /* CoreData.framework in Frameworks */,
+				3DEE32081D5D1457001D730B /* AVFoundation.framework in Frameworks */,
+				3DEE32061D5D144B001D730B /* CoreMedia.framework in Frameworks */,
+				3DEE32041D5D143B001D730B /* AdSupport.framework in Frameworks */,
+				3DEE32021D5D1431001D730B /* SystemConfiguration.framework in Frameworks */,
+				3DEE32001D5D142B001D730B /* QuartzCore.framework in Frameworks */,
 				3DB1DD2E1CFB65930018B5B3 /* UIKit.framework in Frameworks */,
 				3DB1DD2C1CFB658C0018B5B3 /* CoreGraphics.framework in Frameworks */,
 				3DB1DD2A1CFB65860018B5B3 /* Foundation.framework in Frameworks */,
+				3DEE31FE1D5D1173001D730B /* Chartboost.framework in Frameworks */,
+				3DEE31FC1D5CF721001D730B /* StoreKit.framework in Frameworks */,
 				3D9CC7CD1CFB35FF008E2E83 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +381,14 @@
 			isa = PBXGroup;
 			children = (
 				3DE399F41D592EAA004F2B22 /* Default-568h@2x.png */,
+				3DEE32091D5D145D001D730B /* CoreData.framework */,
+				3DEE32071D5D1457001D730B /* AVFoundation.framework */,
+				3DEE32051D5D144B001D730B /* CoreMedia.framework */,
+				3DEE32031D5D143B001D730B /* AdSupport.framework */,
+				3DEE32011D5D1431001D730B /* SystemConfiguration.framework */,
+				3DEE31FF1D5D142B001D730B /* QuartzCore.framework */,
+				3DEE31FD1D5D1173001D730B /* Chartboost.framework */,
+				3DEE31FB1D5CF721001D730B /* StoreKit.framework */,
 				3DB1DD2D1CFB65930018B5B3 /* UIKit.framework */,
 				3DB1DD2B1CFB658C0018B5B3 /* CoreGraphics.framework */,
 				3DB1DD291CFB65860018B5B3 /* Foundation.framework */,
@@ -762,6 +794,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProColors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -885,6 +922,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProColors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -901,6 +943,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Derrick Mu (CRBSJ4DXMT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ProColors/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

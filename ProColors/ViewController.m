@@ -35,7 +35,7 @@
         [[GKLocalPlayer localPlayer]
          authenticateWithCompletionHandler:^(NSError *error)
          {
-             NSLog(@"Error%@", error);
+             //NSLog(@"Error%@", error);
          }];
     }
     
